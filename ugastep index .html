@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UgStep | Uganda's Guide, Step by Step</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        uganda: {
+                            black: '#121212',
+                            yellow: '#FCD116',
+                            red: '#D90429',
+                            darkRed: '#9E0018',
+                            gold: '#E5A900',
+                            slate: '#F8FAFC',
+                            muted: '#64748B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        /* Glassmorphism effects */
+        .glass-header {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+        }
+        /* Ugandan Stripe Accent */
+        .ug-stripe {
+            height: 5px;
+            background: linear-gradient(90deg, #121212 0%, #121212 33.3%, #FCD116 33.3%, #FCD116 66.6%, #D90429 66.6%, #D90429 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans min-h-screen flex flex-col selection:bg-uganda-yellow selection:text-black">
+
+    <!-- Top Flag Color Stripe Accent -->
+    <div class="ug-stripe w-full sticky top-0 z-50"></div>
+
+    <!-- Header Navigation -->
+    <header class="glass-header border-b border-slate-200 sticky top-1 z-40 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo & Title with Ugandan Flag Badge -->
+                <div class="flex items-center gap-3 cursor-pointer" onclick="resetFilters()">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-900 flex items-center justify-center text-white shadow-md relative overflow-hidden group border border-slate-700">
+                        <!-- Uganda Flag Vertical Bands inside Logo -->
+                        <div class="absolute inset-y-0 left-0 w-1.5 bg-black"></div>
+                        <div class="absolute inset-y-0 left-1.5 w-1.5 bg-uganda-yellow"></div>
+                        <div class="absolute inset-y-0 left-3 w-1.5 bg-uganda-red"></div>
+                        <i class="fa-solid fa-shoe-prints text-uganda-yellow text-lg pl-3 transition-transform group-hover:scale-110"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-display font-extrabold text-2xl tracking-tight text-slate-900">Uga<span class="text-uganda-red">Step</span></span>
+                            <!-- SVG Mini Uganda Flag -->
+                            <div class="inline-flex items-center gap-1.5 px-2 py-0.5 text-[10px] font-bold bg-amber-100 border border-amber-300 text-amber-900 rounded-full uppercase tracking-wider">
+                                <svg class="w-3.5 h-2.5 rounded-sm shadow-sm" viewBox="0 0 6 4" fill="none">
+                                    <rect width="6" height="0.66" fill="#000000"/>
+                                    <rect y="0.66" width="6" height="0.66" fill="#FCD116"/>
+                                    <rect y="1.32" width="6" height="0.66" fill="#D90429"/>
+                                    <rect y="1.98" width="6" height="0.66" fill="#000000"/>
+                                    <rect y="2.64" width="6" height="0.66" fill="#FCD116"/>
+                                    <rect y="3.3" width="6" height="0.7" fill="#D90429"/>
+                                </svg>
+                                <span>UG</span>
+                            </div>
+                        </div>
+                        <p class="text-xs font-medium text-slate-500 hidden sm:block">Uganda's Guide, Step by Step</p>
+                    </div>
+                </div>
+
+                <!-- Action Nav Links -->
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <button onclick="scrollToBookmark()" class="hidden md:flex items-center gap-2 px-3 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
+                        <i class="fa-regular fa-bookmark text-amber-500"></i>
+                        <span>Saved Guides</span>
+                        <span id="saved-count" class="ml-1 bg-slate-200 text-slate-700 text-xs px-2 py-0.5 rounded-full font-bold">0</span>
+                    </button>
+                    <button onclick="openSupportModal()" class="flex items-center gap-1.5 px-3 py-2 text-xs sm:text-sm font-semibold text-slate-700 hover:text-slate-900 transition-colors">
+                        <i class="fa-solid fa-headset text-uganda-red"></i>
+                        <span>Support</span>
+                    </button>
+                    <a href="#submit-guide" onclick="showFeedbackModal()" class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-black text-white text-xs sm:text-sm font-semibold shadow-sm hover:shadow transition-all">
+                        <i class="fa-solid fa-plus text-xs text-uganda-yellow"></i>
+                        <span>Suggest Guide</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-b from-amber-50/50 via-slate-50 to-slate-50 pt-10 pb-12 border-b border-slate-200/60 overflow-hidden">
+            <!-- Subtle background grid graphics -->
+            <div class="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-amber-200 text-amber-900 text-xs font-semibold mb-6 shadow-sm">
+                    <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span>Independent Citizen & Practical Guide Platform</span>
+                </div>
+                <h1 class="font-display font-extrabold text-3xl sm:text-5xl text-slate-900 tracking-tight leading-tight">
+                    Navigate Ugandan Public & Civic Services <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-uganda-darkRed to-uganda-red">With Absolute Confidence.</span>
+                </h1>
+                <p class="mt-4 text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                    Clear, verified, step-by-step guides for passports, URA tax TINs, driving permits, business registration, bus schedules, and local council structures.
+                </p>
+
+                <!-- Search Input Box -->
+                <div class="mt-8 max-w-2xl mx-auto relative group">
+                    <div class="relative flex items-center">
+                        <i class="fa-solid fa-magnifying-glass absolute left-4 text-slate-400 text-lg group-focus-within:text-uganda-red transition-colors"></i>
+                        <input type="text" id="search-input" 
+                            placeholder="Search UgaStep guides (e.g., 'TIN Registration', 'Express Passport', 'Kyambogo')..." 
+                            class="w-full pl-12 pr-12 py-4 rounded-2xl bg-white border-2 border-slate-200 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-slate-900 shadow-lg shadow-slate-100 transition-all text-base"
+                            oninput="handleSearch()">
+                        <button id="clear-search" onclick="clearSearch()" class="hidden absolute right-4 text-slate-400 hover:text-slate-600">
+                            <i class="fa-solid fa-circle-xmark text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category Pills Filter -->
+                <div class="mt-8 flex flex-wrap justify-center gap-2 sm:gap-3" id="category-filters">
+                    <button onclick="filterCategory('All')" data-cat="All" class="cat-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all shadow-sm bg-slate-900 text-white">
+                        <i class="fa-solid fa-grid-2 mr-1.5"></i> All Guides
+                    </button>
+                    <button onclick="filterCategory('Civic & Tax')" data-cat="Civic & Tax" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all">
+                        <i class="fa-solid fa-file-invoice-dollar mr-1.5 text-emerald-600"></i> Civic & Tax
+                    </button>
+                    <button onclick="filterCategory('Identification')" data-cat="Identification" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all">
+                        <i class="fa-solid fa-id-card mr-1.5 text-blue-600"></i> Identification
+                    </button>
+                    <button onclick="filterCategory('Business & Licensing')" data-cat="Business & Licensing" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all">
+                        <i class="fa-solid fa-briefcase mr-1.5 text-purple-600"></i> Business & Licensing
+                    </button>
+                    <button onclick="filterCategory('Transport & Travel')" data-cat="Transport & Travel" class="cat-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-all">
+                        <i class="fa-solid fa-bus mr-1.5 text-amber-600"></i> Transport & Travel
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guides Showcase Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <!-- Results Bar & Quick Stats -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-4 border-b border-slate-200">
+                <div>
+                    <h2 class="font-display font-bold text-xl text-slate-900" id="section-title">All Step-by-Step Guides</h2>
+                    <p class="text-xs text-slate-500 mt-0.5" id="guide-count-label">Showing 6 practical UgaStep procedures</p>
+                </div>
+                <div class="flex items-center gap-3 text-xs text-slate-500">
+                    <span class="inline-flex items-center gap-1"><i class="fa-solid fa-circle-check text-emerald-500"></i> Links to Official Portals</span>
+                    <span class="hidden sm:inline">•</span>
+                    <span class="inline-flex items-center gap-1"><i class="fa-regular fa-clock text-amber-500"></i> Estimated Timelines</span>
+                </div>
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="no-results" class="hidden text-center py-16 bg-white rounded-2xl border border-dashed border-slate-300">
+                <div class="w-16 h-16 bg-amber-50 rounded-full flex items-center justify-center mx-auto text-amber-600 text-2xl mb-4">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <h3 class="font-display font-bold text-lg text-slate-800">No guides matched your query</h3>
+                <p class="text-sm text-slate-500 mt-1 max-w-sm mx-auto">Try searching with broader terms like 'passport', 'URA', 'Kyambogo', or 'bus'.</p>
+                <button onclick="resetFilters()" class="mt-4 px-4 py-2 bg-slate-900 text-white rounded-xl text-xs font-semibold hover:bg-black transition-all">Reset All Search Filters</button>
+            </div>
+
+            <!-- Guides Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="guides-grid">
+                <!-- Dynamically Populated Cards -->
+            </div>
+        </section>
+
+        <!-- Quick Helpful Ugandan Tips Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 mb-12">
+            <div class="bg-slate-900 rounded-3xl p-6 sm:p-10 text-white relative overflow-hidden shadow-xl">
+                <!-- Decorative background elements -->
+                <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-uganda-red/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -left-10 -top-10 w-60 h-60 bg-uganda-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10 max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/10 text-uganda-yellow text-xs font-bold uppercase tracking-wider mb-3">
+                        <i class="fa-solid fa-lightbulb"></i> UgaStep Pro Tip
+                    </div>
+                    <h3 class="font-display font-extrabold text-2xl sm:text-3xl text-white tracking-tight">Essential Ugandan Administrative Reminders</h3>
+                    <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-300">
+                        <div class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/10">
+                            <i class="fa-solid fa-fingerprint text-uganda-yellow text-lg mt-0.5"></i>
+                            <div>
+                                <strong class="text-white block font-semibold mb-1">Keep NIN Handy</strong>
+                                Always keep your National Identification Number (NIN) written down; nearly all official Ugandan applications require it.
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/10">
+                            <i class="fa-solid fa-receipt text-uganda-yellow text-lg mt-0.5"></i>
+                            <div>
+                                <strong class="text-white block font-semibold mb-1">PRN Payments</strong>
+                                Bank payments for URA, Passports, or UDPS require a Payment Reference Number (PRN) generated from official portals.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Detailed Guide Modal -->
+    <div id="guide-modal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
+        <div class="bg-white w-full max-w-4xl rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[92vh] animate-in fade-in zoom-in-95 duration-200">
+            <!-- Modal Header -->
+            <div class="px-6 py-5 border-b border-slate-100 flex items-start justify-between bg-slate-50/80 sticky top-0 z-10">
+                <div class="flex items-center gap-3 pr-4">
+                    <div id="modal-icon-bg" class="w-12 h-12 rounded-2xl flex items-center justify-center text-xl shrink-0 shadow-sm">
+                        <i id="modal-icon" class="fa-solid fa-book"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span id="modal-category" class="px-2.5 py-0.5 text-xs font-bold rounded-md bg-slate-200 text-slate-700">Category</span>
+                            <span id="modal-agency" class="text-xs font-semibold text-slate-500">Official Portal</span>
+                        </div>
+                        <h3 id="modal-title" class="font-display font-extrabold text-xl sm:text-2xl text-slate-900 leading-snug">Guide Title</h3>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="w-9 h-9 rounded-full bg-white border border-slate-200 text-slate-500 hover:text-slate-900 hover:bg-slate-100 flex items-center justify-center transition-all shrink-0">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content Body -->
+            <div class="p-6 sm:p-8 overflow-y-auto space-y-8 flex-grow">
+                <!-- Key Quick Info Bar -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 bg-slate-50 rounded-2xl border border-slate-200/80 text-xs">
+                    <div class="space-y-1">
+                        <span class="text-slate-400 font-medium block uppercase tracking-wider text-[10px]">Estimated Cost</span>
+                        <span id="modal-cost" class="font-bold text-slate-900 text-sm">UGX 0</span>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-slate-400 font-medium block uppercase tracking-wider text-[10px]">Timeline</span>
+                        <span id="modal-time" class="font-bold text-slate-900 text-sm">N/A</span>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-slate-400 font-medium block uppercase tracking-wider text-[10px]">Primary Office/Location</span>
+                        <span id="modal-location" class="font-bold text-slate-900 text-sm truncate block">Location</span>
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-slate-400 font-medium block uppercase tracking-wider text-[10px]">Portal Link</span>
+                        <a id="modal-link" href="#" target="_blank" class="font-bold text-uganda-darkRed hover:underline text-sm inline-flex items-center gap-1">
+                            Visit Site <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Description Overview -->
+                <div>
+                    <h4 class="font-display font-bold text-sm text-slate-900 uppercase tracking-wider mb-2">Overview</h4>
+                    <p id="modal-description" class="text-slate-600 text-sm leading-relaxed">Description goes here...</p>
+                </div>
+
+                <!-- Required Documents Checklist -->
+                <div>
+                    <h4 class="font-display font-bold text-sm text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-folder-open text-amber-500"></i> Required Prerequisites & Documents
+                    </h4>
+                    <div id="modal-docs" class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                        <!-- Dynamic document items -->
+                    </div>
+                </div>
+
+                <!-- Interactive Step-by-Step Breakdown -->
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h4 class="font-display font-bold text-sm text-slate-900 uppercase tracking-wider flex items-center gap-2">
+                            <i class="fa-solid fa-list-check text-uganda-red"></i> Step-by-Step Instructions
+                        </h4>
+                        <span id="step-progress" class="text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">0/0 completed</span>
+                    </div>
+
+                    <div id="modal-steps-container" class="space-y-4">
+                        <!-- Dynamic Steps Inserted Here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="px-6 py-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+                <button id="bookmark-btn" onclick="toggleBookmarkCurrent()" class="px-4 py-2 bg-white border border-slate-300 rounded-xl text-xs font-bold text-slate-700 hover:bg-slate-100 transition-all flex items-center gap-2">
+                    <i class="fa-regular fa-bookmark"></i>
+                    <span>Save Guide</span>
+                </button>
+                <button onclick="closeModal()" class="px-5 py-2 bg-slate-900 text-white rounded-xl text-xs font-bold hover:bg-black transition-all">
+                    Done Reading
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suggestion / Feedback Modal -->
+    <div id="feedback-modal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md rounded-3xl shadow-2xl border border-slate-200 p-6 relative">
+            <button onclick="closeFeedbackModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <h3 class="font-display font-bold text-xl text-slate-900 mb-1">Suggest a New UgaStep Guide</h3>
+            <p class="text-xs text-slate-500 mb-4">Is there a public process in Uganda you want clarified? Let us know.</p>
+
+            <form onsubmit="handleSuggestSubmit(event)" class="space-y-4 text-xs">
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Guide Topic / Process Name</label>
+                    <input type="text" required placeholder="e.g. How to register a land title in Mukono" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-slate-900">
+                </div>
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Category</label>
+                    <select class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-slate-900">
+                        <option>Civic & Tax</option>
+                        <option>Identification</option>
+                        <option>Business & Licensing</option>
+                        <option>Transport & Travel</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-semibold text-slate-700 mb-1">Additional Details or Links</label>
+                    <textarea rows="3" placeholder="Provide any extra details or official contacts..." class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-slate-900"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 bg-slate-900 hover:bg-black text-white font-bold rounded-xl transition-all">Submit Suggestion</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Support & Contact Modal -->
+    <div id="support-modal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-lg rounded-3xl shadow-2xl border border-slate-200 p-6 sm:p-8 relative">
+            <button onclick="closeSupportModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-10 h-10 rounded-xl bg-uganda-red/10 text-uganda-red flex items-center justify-center text-lg font-bold">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div>
+                    <h3 class="font-display font-bold text-xl text-slate-900">UgaStep Support & Contact</h3>
+                    <p class="text-xs text-slate-500">Need help navigating a guide or updating information?</p>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Direct WhatsApp Link (Ugandan Code +256) -->
+                <a href="https://wa.me/256700000000?text=Hello%20UgaStep%20Support%2C%20I%20have%20a%20question%20regarding%20a%20guide." target="_blank" class="flex items-center justify-between p-4 rounded-2xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 text-emerald-950 transition-all group">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-2xl text-emerald-600"></i>
+                        <div>
+                            <strong class="text-sm font-bold block">Instant WhatsApp Support</strong>
+                            <span class="text-xs text-emerald-700">+256 700 000000 (Uganda)</span>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-xs text-emerald-600 group-hover:translate-x-1 transition-transform"></i>
+                </a>
+
+                <form onsubmit="handleContactSubmit(event)" class="space-y-3 text-xs pt-2">
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Your Name</label>
+                        <input type="text" required placeholder="e.g. Mukasa John" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-slate-900">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">Your Email or Phone</label>
+                        <input type="text" required placeholder="e.g. name@example.com or 0770..." class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-slate-900">
+                    </div>
+                    <div>
+                        <label class="block font-semibold text-slate-700 mb-1">How can we assist you?</label>
+                        <textarea rows="3" required placeholder="Write your message here..." class="w-full px-3 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:border-slate-900"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3 bg-slate-900 hover:bg-black text-white font-bold rounded-xl transition-all">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link your JS files here -->
+    <script src="guides.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
