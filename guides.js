@@ -43,7 +43,9 @@ const guidesData = [
     },
     {
         id: "express-passport",
-        title: "Applying for an Express Ugandan Passport",
+        title: "Applying for  Ugandan Passport",.
+
+        <span style="color:gold">how to apply for ordinary or express passport step by step in uganda</span>
         category: "Identification",
         agency: "Directorate of Citizenship & Immigration Control",
         icon: "fa-passport",
