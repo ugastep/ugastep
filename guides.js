@@ -83,6 +83,9 @@ DIRECTORATE OF CITIZENSHIP & IMMIGRATION CONTROL."
                       "D-Input your valid phone number starting by country code eg, ' +256700000001'."
                       "F-Input your valid Email,'eg nsambajohn@gmaail.com'."
                       "G-select a security question, 'click the box and choose a question', eg what was your childhood nickname."
+                      "F-click down security answer box and put your answer , eg 'matayo'."
+                      "G-Enter the text in the displayed image,'write the words you see there in that space box' ,eg QXZT ."
+                      "H-click save and continue."
                 
             },
             {
