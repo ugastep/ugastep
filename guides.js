@@ -11,6 +11,8 @@ const guidesData = [
         time: "1 - 2 Hours",
         location: "URA Portal / Any URA Station",
         link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_tin",
         description: "A Tax Identification Number (TIN) is mandatory for employment, opening bank accounts, property purchase, and business operations in Uganda.",
         documents: [
             "National ID (NIN) or Alien Identification Card",
@@ -21,7 +23,8 @@ const guidesData = [
         steps: [
             {
                 title: "Visit the Official URA Web Portal",
-                desc: "Go to the official URA e-services portal and click on 'Register for TIN'."
+                desc: "Go to the official URA e-services portal and click on 'Register for TIN'.",
+                image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80"
             },
             {
                 title: "Select Taxpayer Type",
@@ -43,8 +46,7 @@ const guidesData = [
     },
     {
         id: "express-passport",
-        title: "Applying for an Express Ugandan Passport",
-         title: "How to apply for ordinary or express passport step by step in uganda",
+        title: "How to Apply for Ordinary or Express Passport Step by Step in Uganda",
         category: "Identification",
         agency: "Directorate of Citizenship & Immigration Control",
         icon: "fa-passport",
@@ -53,6 +55,8 @@ const guidesData = [
         time: "3 - 5 Working Days",
         location: "DCIC Headquarters, Kyambogo",
         link: "https://passports.go.ug",
+        image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_passport",
         description: "Step-by-step procedure to acquire a machine-readable or e-passport through the Ministry of Internal Affairs online portal.",
         documents: [
             "National Identity Card (NIN)",
@@ -63,30 +67,12 @@ const guidesData = [
         steps: [
             {
                 title: "Access the Passport Portal",
-                 link: "https://passports.go.ug",
-                desc: "Navigate to the official passport application portal ."
-                      "Go to any browser, type : www.passports.go.ug."
-                      "OR click the link above :visit site; to access the official passport portal."
-                      "It will display ,THE REPUBLIC OF UGANDA
-MINISTRY OF INTERNAL AFFAIRS
-
-DIRECTORATE OF CITIZENSHIP & IMMIGRATION CONTROL."
-                       "Uganda Passport Application."
-
-                     
+                link: "https://passports.go.ug",
+                desc: "Navigate to the official passport application portal. Go to your browser, type www.passports.go.ug, or click the link to access the site. It will display the Ministry of Internal Affairs Directorate of Citizenship & Immigration Control portal."
             },
             {
                 title: "Fill Out Application Form",
-                desc: "A- Select 'Apply for  passport', click 'Start New Application'."
-                      "B-Accept the terms and conditions by clicking the box , 'Accept'."
-                      "C-Now click ' START' and scroll down to fill information."
-                      "D-Input your valid phone number starting by country code eg, ' +256700000001'."
-                      "F-Input your valid Email,'eg nsambajohn@gmaail.com'."
-                      "G-select a security question, 'click the box and choose a question', eg what was your childhood nickname."
-                      "F-click down security answer box and put your answer , eg 'matayo'."
-                      "G-Enter the text in the displayed image,'write the words you see there in that space box' ,eg QXZT ."
-                      "H-click save and continue."
-                
+                desc: "A) Select 'Apply for passport', click 'Start New Application'. B) Accept the terms and conditions. C) Click 'START' and scroll down to fill information. D) Input your valid phone number starting with country code (e.g., +256700000001). E) Input a valid email address. F) Select a security question and provide your answer. G) Enter the text from the captcha image and click save and continue."
             },
             {
                 title: "Generate Payment PRN",
@@ -113,6 +99,8 @@ DIRECTORATE OF CITIZENSHIP & IMMIGRATION CONTROL."
         time: "1 Working Day (Express)",
         location: "Kymantindeke / Regional Offices",
         link: "https://www.udps.go.ug",
+        image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_driving_permit",
         description: "How to transition from a learner's permit or renew your full Ugandan driving license through authorized evaluation centers.",
         documents: [
             "Valid Learner Driving Permit",
@@ -154,6 +142,8 @@ DIRECTORATE OF CITIZENSHIP & IMMIGRATION CONTROL."
         time: "2 - 3 Working Days",
         location: "URSB HQ, Kampala / OBR Portal",
         link: "https://ursb.go.ug",
+        image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ursb",
         description: "Official procedure for reserving a business name, incorporating a limited liability company, and acquiring incorporation certificates.",
         documents: [
             "Proposed Company Names (At least 3 options)",
@@ -195,6 +185,8 @@ DIRECTORATE OF CITIZENSHIP & IMMIGRATION CONTROL."
         time: "Instant Booking",
         location: "Namayiba, Usafi, or Kisenyi Bus Terminals",
         link: "https://ugandabusschedules.com",
+        image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_bus_travel",
         description: "Practical guide to booking safe upcountry bus travel from Kampala to Gulu, Mbarara, Fort Portal, Mbale, and Arua.",
         documents: [
             "Valid National ID or Phone for Mobile Ticket",
@@ -230,7 +222,9 @@ DIRECTORATE OF CITIZENSHIP & IMMIGRATION CONTROL."
         time: "1 Working Day",
         location: "MLHUD Zonal Offices / National Lands Information Portal",
         link: "https://mlhud.go.ug",
-        description: "Protect yourself from land fraud by conducting an official official land search and title verification before purchasing property.",
+        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_land_title",
+        description: "Protect yourself from land fraud by conducting an official land search and title verification before purchasing property.",
         documents: [
             "Block and Plot Number / Copy of Title",
             "National ID of the Searcher",
