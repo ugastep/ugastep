@@ -68,22 +68,22 @@ const guidesData = [
             {
                 title: "Access the Passport Portal",
                 link: "https://passports.go.ug",
-                desc: " <span style='color: #1e40af; font-weight: 500;'>Navigate to the official passport application portal. Go to your browser, type www.passports.go.ug, or click the link to access the site. It will display the Ministry of Internal Affairs Directorate of Citizenship & Immigration Control portal."
+                desc: "<span style='color: #1e40af; font-weight: 500;'>Navigate to the official passport application portal. Go to your browser, type www.passports.go.ug, or click the link to access the site. It will display the Ministry of Internal Affairs Directorate of Citizenship & Immigration Control portal.</span>"
             },
             {
                 title: "Fill Out Application Form",
-                desc:"Complete the online application form using these steps:<br><br>" +
+                desc: "Complete the online application form using these steps:<br><br>" +
                      "• <span style='color: #FFD700; font-weight: 500;'>'STEP ONE'.</span><br>" +
-                      "• <span style='color: #1e40af; font-weight: 500;'>Select 'Apply for Passport' and click 'Start New Application'.</span><br>" +
-                      "• <span style='color: #1e40af; font-weight: 500;'>Accept the terms and conditions by clicking the 'Accept' box.</span><br>" +
-                      "• <span style='color: #1e40af; font-weight: 500;'>Click 'START' and scroll down to fill in your personal information.</span><br>" +
-                      "• <span style='color: #1e40af; font-weight: 500;'>Input your valid phone number starting with the country code (e.g., +256700000001).</span><br>" +
-                      "• <span style='color: #1e40af; font-weight: 500;'>Input a valid email address (e.g., nsambajohn@gmail.com).</span><br>" +
-                      "• <span style='color: #1e40af; font-weight: 500;'>Choose a security question from the dropdown and type your answer (e.g., matayo).</span><br>" 
-                      "• <span style='color: #1e40af; font-weight: 500;'>Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span>"
+                     "• <span style='color: #1e40af; font-weight: 500;'>Select 'Apply for Passport' and click 'Start New Application'.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Accept the terms and conditions by clicking the 'Accept' box.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Click 'START' and scroll down to fill in your personal information.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Input your valid phone number starting with the country code (e.g., +256700000001).</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Input a valid email address (e.g., nsambajohn@gmail.com).</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Choose a security question from the dropdown and type your answer (e.g., matayo).</span><br>" + 
+                     "• <span style='color: #1e40af; font-weight: 500;'>Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span><br><br>" +
                      "• <span style='color: #FFD700; font-weight: 500;'>'STEP TWO'.</span><br>" +
-                    
-                    },
+                     "• <span style='color: #1e40af; font-weight: 500;'>Proceed to fill in your application details such as birth particulars, parents' details, and professional background as required by the portal.</span>"
+            },
             {
                 title: "Generate Payment PRN",
                 desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
