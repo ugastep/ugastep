@@ -73,7 +73,7 @@ const guidesData = [
             {
                 title: "Fill Out Application Form",
                 desc:"Complete the online application form using these steps:<br><br>" +
-                     "• <span style='color: #FFD700; font-weight: 500;'>STEP ONE</span><br>" +
+                     "• <span style='color: #FFD700; font-weight: 500;'>'STEP ONE'.</span><br>" +
                       "• <span style='color: #1e40af; font-weight: 500;'>Select 'Apply for Passport' and click 'Start New Application'.</span><br>" +
                       "• <span style='color: #1e40af; font-weight: 500;'>Accept the terms and conditions by clicking the 'Accept' box.</span><br>" +
                       "• <span style='color: #1e40af; font-weight: 500;'>Click 'START' and scroll down to fill in your personal information.</span><br>" +
