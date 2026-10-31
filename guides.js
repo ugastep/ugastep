@@ -67,7 +67,7 @@ const guidesData = [
                 desc: "Navigate to the official passport application portal ."
                       "Go to any browser, type : www.passports.go.ug."
                       "OR click the link above :visit portal; to access the official site."
-                      "link: "https://passports.go.ug."
+                      "link: "https://passports.go.ug.",
                     
             },
             {
