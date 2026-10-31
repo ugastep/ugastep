@@ -43,8 +43,8 @@ const guidesData = [
     },
     {
         id: "express-passport",
-        title: "Applying for  Ugandan Passport",.
-how to apply for ordinary or express passport step by step in uganda
+        title: "Applying for  Ugandan Passport",
+How to apply for ordinary or express passport step by step in uganda
     
         category: "Identification",
         agency: "Directorate of Citizenship & Immigration Control",
