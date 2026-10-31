@@ -63,6 +63,7 @@ const guidesData = [
         steps: [
             {
                 title: "Access the Passport Portal",
+                 link: "https://passports.go.ug",
                 desc: "Navigate to the official DCIC passport application portal and create an account."
             },
             {
