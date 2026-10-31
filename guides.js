@@ -81,7 +81,8 @@ const guidesData = [
                       "• <span style='color: #1e40af; font-weight: 500;'>Input a valid email address (e.g., nsambajohn@gmail.com).</span><br>" +
                       "• <span style='color: #1e40af; font-weight: 500;'>Choose a security question from the dropdown and type your answer (e.g., matayo).</span><br>" 
                       "• <span style='color: #1e40af; font-weight: 500;'>Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span>"
-                       "• <span style='color: #FFD700; font-weight: 500;'>'STEP TWO'.</span><br>" +
+                     "• <span style='color: #FFD700; font-weight: 500;'>'STEP TWO'.</span><br>" +
+                    
                     },
             {
                 title: "Generate Payment PRN",
