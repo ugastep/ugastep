@@ -77,7 +77,13 @@ DIRECTORATE OF CITIZENSHIP & IMMIGRATION CONTROL."
             },
             {
                 title: "Fill Out Application Form",
-                desc: "Select 'Express Application', fill in your biographical data, and upload required passport-size photos."
+                desc: "A- Select 'Apply for  passport', click 'Start New Application'."
+                      "B-Accept the terms and conditions by clicking the box , 'Accept'."
+                      "C-Now click ' START' and scroll down to fill information."
+                      "D-Input your valid phone number starting by country code eg, ' +256700000001'."
+                      "F-Input your valid Email,'eg nsambajohn@gmaail.com'."
+                      "G-select a security question, 'click the box and choose a question', eg what was your childhood nickname."
+                
             },
             {
                 title: "Generate Payment PRN",
