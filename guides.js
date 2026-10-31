@@ -72,14 +72,14 @@ const guidesData = [
             },
             {
                 title: "Fill Out Application Form",
-                desc:"Complete the online application form using these vertical steps:\n\n" +
-                      "• Select 'Apply for Passport' and click 'Start New Application'.\n" +
-                      "• Accept the terms and conditions by clicking the 'Accept' box.\n" +
-                      "• Click 'START' and scroll down to fill in your personal information.\n" +
-                      "• Input your valid phone number starting with the country code (e.g., +256700000001).\n" +
-                      "• Input a valid email address (e.g., nsambajohn@gmail.com).\n" +
-                      "• Choose a security question from the dropdown and type your answer (e.g., matayo).\n" +
-                      "• Enter the verification text shown in the captcha image, then click 'Save and Continue'."
+                desc:"Complete the online application form using these vertical steps:<br><br>" +
+                      "• <span style='color: #1e40af; font-weight: 500;'>Select 'Apply for Passport' and click 'Start New Application'.</span><br>" +
+                      "• <span style='color: #1e40af; font-weight: 500;'>Accept the terms and conditions by clicking the 'Accept' box.</span><br>" +
+                      "• <span style='color: #1e40af; font-weight: 500;'>Click 'START' and scroll down to fill in your personal information.</span><br>" +
+                      "• <span style='color: #1e40af; font-weight: 500;'>Input your valid phone number starting with the country code (e.g., +256700000001).</span><br>" +
+                      "• <span style='color: #1e40af; font-weight: 500;'>Input a valid email address (e.g., nsambajohn@gmail.com).</span><br>" +
+                      "• <span style='color: #1e40af; font-weight: 500;'>Choose a security question from the dropdown and type your answer (e.g., matayo).</span><br>" +
+                      "• <span style='color: #1e40af; font-weight: 500;'>Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span>"
             },
             {
                 title: "Generate Payment PRN",
