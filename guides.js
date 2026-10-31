@@ -68,7 +68,7 @@ const guidesData = [
             {
                 title: "Access the Passport Portal",
                 link: "https://passports.go.ug",
-                desc: "Navigate to the official passport application portal. Go to your browser, type www.passports.go.ug, or click the link to access the site. It will display the Ministry of Internal Affairs Directorate of Citizenship & Immigration Control portal."
+                desc: " <span style='color: #1e40af; font-weight: 500;'>Navigate to the official passport application portal. Go to your browser, type www.passports.go.ug, or click the link to access the site. It will display the Ministry of Internal Affairs Directorate of Citizenship & Immigration Control portal."
             },
             {
                 title: "Fill Out Application Form",
