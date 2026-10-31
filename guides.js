@@ -72,7 +72,14 @@ const guidesData = [
             },
             {
                 title: "Fill Out Application Form",
-                desc: "A) Select 'Apply for passport', click 'Start New Application'. B) Accept the terms and conditions. C) Click 'START' and scroll down to fill information. D) Input your valid phone number starting with country code (e.g., +256700000001). E) Input a valid email address. F) Select a security question and provide your answer. G) Enter the text from the captcha image and click save and continue."
+                desc:"Complete the online application form using these vertical steps:\n\n" +
+                      "• Select 'Apply for Passport' and click 'Start New Application'.\n" +
+                      "• Accept the terms and conditions by clicking the 'Accept' box.\n" +
+                      "• Click 'START' and scroll down to fill in your personal information.\n" +
+                      "• Input your valid phone number starting with the country code (e.g., +256700000001).\n" +
+                      "• Input a valid email address (e.g., nsambajohn@gmail.com).\n" +
+                      "• Choose a security question from the dropdown and type your answer (e.g., matayo).\n" +
+                      "• Enter the verification text shown in the captcha image, then click 'Save and Continue'."
             },
             {
                 title: "Generate Payment PRN",
