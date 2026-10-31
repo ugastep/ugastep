@@ -65,6 +65,14 @@ const guidesData = [
                 title: "Access the Passport Portal",
                  link: "https://passports.go.ug",
                 desc: "Navigate to the official passport application portal ."
+                      "Go to any browser, type : www.passports.go.ug."
+                      "OR click the link above :visit site; to access the official passport portal."
+                      "It will display ,THE REPUBLIC OF UGANDA
+MINISTRY OF INTERNAL AFFAIRS
+
+DIRECTORATE OF CITIZENSHIP & IMMIGRATION CONTROL."
+                       "Uganda Passport Application."
+
                      
             },
             {
