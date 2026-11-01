@@ -79,18 +79,17 @@ const guidesData = [
                      "• <span style='color: #1e40af; font-weight: 500;'>Click 'START' and scroll down to fill in your personal information.</span><br>" +
                      "• <span style='color: #1e40af; font-weight: 500;'>Input your valid phone number starting with the country code (e.g., +256700000001).</span><br>" +
                      "• <span style='color: #1e40af; font-weight: 500;'>Input a valid email address (e.g., nsambajohn@gmail.com).</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Choose a security question from the dropdown and type your answer .</span><br>" + 
+                     "• <span style='color: #1e40af; font-weight: 500;'>Choose a security question from the dropdown and type your answer.</span><br>" + 
                      "• <span style='color: #1e40af; font-weight: 500;'>Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span><br><br>" +
                      "• <span style='color: #FFD700; font-weight: 500;'>'STEP TWO'.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'> , After save and continue, THE next step is THE APPLICATION.</span>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>, HERE  you going to choose, passport type, type of application, priority,place of submission and place of collection '</span><br>"+
-                     "• <span style='color: #1e40af; font-weight: 500;'>, Passport type, Click the space box below and choose the passport type accordingly, eg ' Ordinary - For general ugandans,Diplomatic - For only Ugandan diplomats, And  Service /Official - For high level Government officials '. </span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>, Type of application, Click the space box below and choose, eg 'New application for only those who never got passport before, Renewal for those who ever got but gets expired, change of details for those who got passport before but they have an information to change on their passports, damaged for those when their passport got spoiled AND Lost for only who lost their passports '. </span><br> +
-                     "• <span style='color: #1e40af; font-weight: 500;'>, Priority, click the space box below and choose your priority, If you want ordinary, click ordinary, if you want express, click express base on period you want your passport, for ordinary UGX 250000, 1-2weeks, for express UGX400000 2-3days'</span><br> +
-                     "• <span style='color: #1e40af; font-weight: 500;'>, Place of submission, click the space box and choose where easily you can go to make your passport, eg Jinja, central office Kampala, Arua, Gulu, choose one according to where you are '. </span><br> +
-                     "• <span style='color: #1e40af; font-weight: 500;'>, Place of collection, click the space box below and choose the place where you will find your passport when is done, Note The place of submission you choose, I recommend you to be the place of collection for easy access'. </span><br> +
-                     "• <span style='color: #1e40af; font-weight: 500;'>, After filling that information, Click save and continue '. </span><br> +
-                    
+                     "• <span style='color: #1e40af; font-weight: 500;'>After save and continue, the next step is the application.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Here you are going to choose passport type, type of application, priority, place of submission, and place of collection.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Passport type: Click the dropdown box and choose the passport type accordingly, e.g., 'Ordinary' for general Ugandans, 'Diplomatic' for only Ugandan diplomats, and 'Service / Official' for high-level government officials.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Type of application: Click and choose, e.g., 'New application' for those who never got a passport before, 'Renewal' for expired passports, 'Change of details' for information updates, 'Damaged' for spoiled passports, and 'Lost' for lost passports.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Priority: Choose your priority. Ordinary costs UGX 250,000 (1-2 weeks); Express costs UGX 400,000 (2-3 days).</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Place of submission: Choose where you can easily go, e.g., Jinja, Central Office Kampala, Arua, Gulu.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Place of collection: Choose where you will pick up your passport when done (it is recommended to set this as the same place of submission).</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>After filling that information, click 'Save and Continue'.</span>"
             },
             {
                 title: "Generate Payment PRN",
