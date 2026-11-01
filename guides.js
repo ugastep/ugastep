@@ -73,7 +73,7 @@ const guidesData = [
             {
                 title: "Fill Out Application Form",
                 desc: "Complete the online application form using these steps:<br><br>" +
-                     "• <span style='color: #006400; font-weight: 500;'>'STEP ONE'.</span><br>" +
+                     "• <span style='color: #FFD700; font-weight: 500;'>'STEP ONE'.</span><br>" +
                      "• <span style='color: #1e40af; font-weight: 500;'>Select 'Apply for Passport' and click 'Start New Application'.</span><br>" +
                      "• <span style='color: #1e40af; font-weight: 500;'>Accept the terms and conditions by clicking the 'Accept' box.</span><br>" +
                      "• <span style='color: #1e40af; font-weight: 500;'>Click 'START' and scroll down to fill in your personal information.</span><br>" +
@@ -82,7 +82,15 @@ const guidesData = [
                      "• <span style='color: #1e40af; font-weight: 500;'>Choose a security question from the dropdown and type your answer .</span><br>" + 
                      "• <span style='color: #1e40af; font-weight: 500;'>Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span><br><br>" +
                      "• <span style='color: #FFD700; font-weight: 500;'>'STEP TWO'.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Proceed to fill in your application details such as birth particulars, parents' details, and professional background as required by the portal.</span>"
+                     "• <span style='color: #1e40af; font-weight: 500;'> , After save and continue, THE next step is THE APPLICATION.</span>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>, HERE  you going to choose, passport type, type of application, priority,place of submission and place of collection '</span><br>"+
+                     "• <span style='color: #1e40af; font-weight: 500;'>, Passport type, Click the space box below and choose the passport type accordingly, eg ' Ordinary - For general ugandans,Diplomatic - For only Ugandan diplomats, And  Service /Official - For high level Government officials '. </span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>, Type of application, Click the space box below and choose, eg 'New application for only those who never got passport before, Renewal for those who ever got but gets expired, change of details for those who got passport before but they have an information to change on their passports, damaged for those when their passport got spoiled AND Lost for only who lost their passports '. </span><br> +
+                     "• <span style='color: #1e40af; font-weight: 500;'>, Priority, click the space box below and choose your priority, If you want ordinary, click ordinary, if you want express, click express base on period you want your passport, for ordinary UGX 250000, 1-2weeks, for express UGX400000 2-3days'</span><br> +
+                     "• <span style='color: #1e40af; font-weight: 500;'>, Place of submission, click the space box and choose where easily you can go to make your passport, eg Jinja, central office Kampala, Arua, Gulu, choose one according to where you are '. </span><br> +
+                     "• <span style='color: #1e40af; font-weight: 500;'>, Place of collection, click the space box below and choose the place where you will find your passport when is done, Note The place of submission you choose, I recommend you to be the place of collection for easy access'. </span><br> +
+                     "• <span style='color: #1e40af; font-weight: 500;'>, After filling that information, Click save and continue '. </span><br> +
+                    
             },
             {
                 title: "Generate Payment PRN",
