@@ -51,7 +51,7 @@ const guidesData = [
         agency: "Directorate of Citizenship & Immigration Control",
         icon: "fa-passport",
         color: "bg-blue-50 text-blue-600 border-blue-200",
-        cost: "UGX 400,000 (Ordinary) + Express Fee",
+        cost: "UGX 400,000 (Express) and UGX 250,000 Normal (Ordinary) Fee",
         time: "3 - 5 Working Days",
         location: "DCIC Headquarters, Kyambogo",
         link: "https://passports.go.ug",
