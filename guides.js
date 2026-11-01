@@ -83,13 +83,13 @@ const guidesData = [
                      "• <span style='color: #1e40af; font-weight: 500;'>Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span><br><br>" +
                      "• <span style='color: #FFD700; font-weight: 500;'>'STEP TWO'.</span><br>" +
                      "• <span style='color: #1e40af; font-weight: 500;'>After save and continue, the next step is the application.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Here you are going to choose passport type, type of application, priority, place of submission, and place of collection.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Passport type: Click the dropdown box and choose the passport type accordingly, e.g., 'Ordinary' for general Ugandans, 'Diplomatic' for only Ugandan diplomats, and 'Service / Official' for high-level government officials.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Type of application: Click and choose, e.g., 'New application' for those who never got a passport before, 'Renewal' for expired passports, 'Change of details' for information updates, 'Damaged' for spoiled passports, and 'Lost' for lost passports.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Priority: Choose your priority. Ordinary costs UGX 250,000 (1-2 weeks); Express costs UGX 400,000 (2-3 days).</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Place of submission: Choose where you can easily go, e.g., Jinja, Central Office Kampala, Arua, Gulu.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Place of collection: Choose where you will pick up your passport when done (it is recommended to set this as the same place of submission).</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>After filling that information, click 'Save and Continue'.</span>"
+                     "• <span style='color: #1e40af; font-weight: 500;'>Here you are going to choose passport type, type of application, priority, place of submission and place of collection.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Passport type: Click the space box below and choose the passport type accordingly, eg 'Ordinary - For general Ugandans, Diplomatic - For only Ugandan diplomats, And Service / Official - For high-level Government officials'.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Type of application: Click the space box below and choose, eg 'New application for only those who never got passport before, Renewal for those who ever got but gets expired, Change of details for those who got passport before but they have information to change on their passports, Damaged for those when their passport got spoiled AND Lost for only who lost their passports'.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Priority: Click the space box below and choose your priority. If you want ordinary, click ordinary; if you want express, click express based on period you want your passport. For ordinary UGX 250,000 (1-2 weeks), for express UGX 400,000 (2-3 days).</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Place of submission: Click the space box and choose where easily you can go to make your passport, eg Jinja, central office Kampala, Arua, Gulu, choose one according to where you are.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>Place of collection: Click the space box below and choose the place where you will find your passport when it is done. Note: The place of submission you choose, I recommend you to be the place of collection for easy access.</span><br>" +
+                     "• <span style='color: #1e40af; font-weight: 500;'>After filling that information, click save and continue.</span>"
             },
             {
                 title: "Generate Payment PRN",
@@ -114,7 +114,7 @@ const guidesData = [
         color: "bg-amber-50 text-amber-600 border-amber-200",
         cost: "UGX 130,000 - 250,000 (Based on Class)",
         time: "1 Working Day (Express)",
-        location: "Kymantindeke / Regional Offices",
+        location: "Kyambogo / Regional Offices",
         link: "https://www.udps.go.ug",
         image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80",
         videoEmbed: "https://www.youtube.com/embed/placeholder_driving_permit",
