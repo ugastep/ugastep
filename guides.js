@@ -93,14 +93,22 @@ const guidesData = [
             },
            {
                 title: "THE APPLICANT",
-            desc: "HERE you going to put your personal details as it is on your NATIONAL ID:<br><br>" +
+               
+            desc: "• <span style='color: #FFD700; font-weight: 500;'>'PERSONAL DETAILS'.</span><br>" +
+              "HERE you going to put your personal details as it is on your NATIONAL ID:<br><br>" +
                 "• <span style='color: #1e40af; font-weight: 500;'>PUT  a surname eg NANYONJO and a Given name eg CATHY'.</span><br>" +
                  "• <span style='color: #1e40af; font-weight: 500;'>put a NATIONAL ID NO (NIN) eg CM980471001GHK orCF980471001GHK'.</span><br>+
                 "• <span style='color: #1e40af; font-weight: 500;'>Choose your gender, eg male or female'.</span><br>" +
                 "• <span style='color: #1e40af; font-weight: 500;'>PUT  your date of birth as its on your NATIONAL ID'.</span><br>" +
                  "• <span style='color: #1e40af; font-weight: 500;'>Marital status, click the space bar and select eg,single,married,divorced,etc,choose one'.</span><br>+
                  "• <span style='color: #1e40af; font-weight: 500;'>Country of BIRTH, put UGANDA, Place of birth, put a place you born eg KAYUNGA, profession/occupation, CLICK in the space bar and select one eg EDUCATION'.</span><br>+
-                "• <span style='color: #1e40af; font-weight: 500;'>
+                 "• <span style='color: #FFD700; font-weight: 500;'>'RESIDANTIAL ADDRESS'.</span><br>" +
+                 "• <span style='color: #1e40af; font-weight: 500;'>CLICK the space bar and choose your country of residance eg UGANDA'.</span><br>" +
+                "• <span style='color: #1e40af; font-weight: 500;'>DISTRICT, click the space box and choose your district eg kampala, kayunga,kamuli,etc NOTE, THE DISTRICT YOU CHOOSE MUST BE THE ONE ON YOUR NATIONAL ID'.</span><br>+
+                "• <span style='color: #1e40af; font-weight: 500;'>PLOT NO, you can put it if you know it eg 001, if you don't know, you can leave it'.</span><br>" +
+                 "• <span style='color: #FFD700; font-weight: 500;'>DETAILS OF ORIGIN'.</span><br>" +
+                 "• <span style='color: #1e40af; font-weight: 500;'>HERE, on country select uganda,DISTRICT, select your district which is on your national ID,PLOT NO, put it eg 001 ,if you don't know, leave it'.</span><br>" +
+                
             },
             {
                 title: "CITIZENSHIP",
