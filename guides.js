@@ -93,7 +93,14 @@ const guidesData = [
             },
            {
                 title: "THE APPLICANT",
-                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            desc: "HERE you going to put your personal details as it is on your NATIONAL ID:<br><br>" +
+                "• <span style='color: #1e40af; font-weight: 500;'>PUT  a surname eg NANYONJO and a Given name eg CATHY'.</span><br>" +
+                 "• <span style='color: #1e40af; font-weight: 500;'>put a NATIONAL ID NO (NIN) eg CM980471001GHK orCF980471001GHK'.</span><br>+
+                "• <span style='color: #1e40af; font-weight: 500;'>Choose your gender, eg male or female'.</span><br>" +
+                "• <span style='color: #1e40af; font-weight: 500;'>PUT  your date of birth as its on your NATIONAL ID'.</span><br>" +
+                 "• <span style='color: #1e40af; font-weight: 500;'>Marital status, click the space bar and select eg,single,married,divorced,etc,choose one'.</span><br>+
+                 "• <span style='color: #1e40af; font-weight: 500;'>Country of BIRTH, put UGANDA, Place of birth, put a place you born eg KAYUNGA, profession/occupation, CLICK in the space bar and select one eg EDUCATION'.</span><br>+
+                "• <span style='color: #1e40af; font-weight: 500;'>
             },
             {
                 title: "CITIZENSHIP",
