@@ -111,7 +111,7 @@ const guidesData = [
                 "• <span style='color: #1e40af; font-weight: 500;'>APPLICANT'S TRIBE,click in the space bar and select your tribe eg baamba,baganda,basoga,bagisu,choose one'.</span><br>" +
                 "• <span style='color: #1e40af; font-weight: 500;'>Give a details of your clan, i recommend you to leave it, but you can put it if you know it'.</span><br>" +
                 "• <span style='color: #1e40af; font-weight: 500;'>Names of descendants, here you put your grand mother and grand father's name egName of Descendant 1, NANTEZA, Descendant 2,KITAKA'.</span><br>" +
-                
+                 "• <span style='color: #1e40af; font-weight: 500;'>CLICK save and continue'.</span><br>" +
             },
             {
                 title: "CITIZENSHIP",
