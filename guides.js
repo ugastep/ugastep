@@ -68,39 +68,88 @@ const guidesData = [
             {
                 title: "Access the Passport Portal",
                 link: "https://passports.go.ug",
-                desc: "<span style='color: #1e40af; font-weight: 500;'>Navigate to the official passport application portal. Go to your browser, type www.passports.go.ug, or click the link to access the site. It will display the Ministry of Internal Affairs Directorate of Citizenship & Immigration Control portal.</span>"
+                desc: "<span style=\"color: #1e40af; font-weight: 500;\">Navigate to the official passport application portal. Go to your browser, type www.passports.go.ug, or click the link to access the site. It will display the Ministry of Internal Affairs Directorate of Citizenship & Immigration Control portal.</span>"
             },
             {
                 title: "Fill Out Application Form",
                 desc: "Complete the online application form using these steps:<br><br>" +
-                     "• <span style='color: #FFD700; font-weight: 500;'>'STEP ONE'.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Select 'Apply for Passport' and click 'Start New Application'.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Accept the terms and conditions by clicking the 'Accept' box.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Click 'START' and scroll down to fill in your personal information.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Input your valid phone number starting with the country code (e.g., +256700000001).</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Input a valid email address (e.g., nsambajohn@gmail.com).</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Choose a security question from the dropdown and type your answer.</span><br>" + 
-                     "• <span style='color: #1e40af; font-weight: 500;'>Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span><br><br>" +
-                     "• <span style='color: #FFD700; font-weight: 500;'>'STEP TWO'.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>After save and continue, the next step is the application.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Here you are going to choose passport type, type of application, priority, place of submission and place of collection.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Passport type: Click the space box below and choose the passport type accordingly, eg 'Ordinary - For general Ugandans, Diplomatic - For only Ugandan diplomats, And Service / Official - For high-level Government officials'.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Type of application: Click the space box below and choose, eg 'New application for only those who never got passport before, Renewal for those who ever got but gets expired, Change of details for those who got passport before but they have information to change on their passports, Damaged for those when their passport got spoiled AND Lost for only who lost their passports'.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Priority: Click the space box below and choose your priority. If you want ordinary, click ordinary; if you want express, click express based on period you want your passport. For ordinary UGX 250,000 (1-2 weeks), for express UGX 400,000 (2-3 days).</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Place of submission: Click the space box and choose where easily you can go to make your passport, eg Jinja, central office Kampala, Arua, Gulu, choose one according to where you are.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>Place of collection: Click the space box below and choose the place where you will find your passport when it is done. Note: The place of submission you choose, I recommend you to be the place of collection for easy access.</span><br>" +
-                     "• <span style='color: #1e40af; font-weight: 500;'>After filling that information, click save and continue.</span>"
+                "• <span style=\"color: #FFD700; font-weight: 500;\">'STEP ONE'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Select 'Apply for Passport' and click 'Start New Application'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Accept the terms and conditions by clicking the 'Accept' box.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Click 'START' and scroll down to fill in your personal information.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Input your valid phone number starting with the country code (e.g., +256700000001).</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Input a valid email address (e.g., nsambajohn@gmail.com).</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Choose a security question from the dropdown and type your answer.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span><br><br>" +
+                "• <span style=\"color: #FFD700; font-weight: 500;\">'STEP TWO'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">After save and continue, the next step is the application.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Here you are going to choose passport type, type of application, priority, place of submission and place of collection.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Passport type: Click the space box below and choose the passport type accordingly, eg 'Ordinary - For general Ugandans, Diplomatic - For only Ugandan diplomats, And Service / Official - For high-level Government officials'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Type of application: Click the space box below and choose, eg 'New application for only those who never got passport before, Renewal for those who ever got but gets expired, Change of details for those who got passport before but they have information to change on their passports, Damaged for those when their passport got spoiled AND Lost for only who lost their passports'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Priority: Click the space box below and choose your priority. If you want ordinary, click ordinary; if you want express, click express based on period you want your passport. For ordinary UGX 250,000 (1-2 weeks), for express UGX 400,000 (2-3 days).</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Place of submission: Click the space box and choose where easily you can go to make your passport, eg Jinja, central office Kampala, Arua, Gulu, choose one according to where you are.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Place of collection: Click the space box below and choose the place where you will find your passport when it is done. Note: The place of submission you choose, I recommend you to be the place of collection for easy access.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">After filling that information, click save and continue.</span>"
             },
             {
-                title: "Generate Payment PRN",
+                title: "THE APPLICANT",
+                desc: "• <span style=\"color: #FFD700; font-weight: 500;\">'PERSONAL DETAILS'.</span><br>" +
+                "HERE you are going to put your personal details as it is on your NATIONAL ID:<br><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">PUT a surname eg NANYONJO and a Given name eg CATHY.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Put a NATIONAL ID NO (NIN) eg CM980471001GHK or CF980471001GHK.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Choose your gender, eg male or female.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">PUT your date of birth as it is on your NATIONAL ID.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Marital status, click the space bar and select eg single, married, divorced, etc, choose one.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Country of BIRTH, put UGANDA, Place of birth, put a place you were born eg KAYUNGA, profession/occupation, CLICK in the space bar and select one eg EDUCATION.</span><br>" +
+                "• <span style=\"color: #FFD700; font-weight: 500;\">'RESIDENTIAL ADDRESS'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">CLICK the space bar and choose your country of residence eg UGANDA.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">DISTRICT, click the space box and choose your district eg kampala, kayunga, kamuli, etc NOTE: THE DISTRICT YOU CHOOSE MUST BE THE ONE ON YOUR NATIONAL ID.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">PLOT NO, you can put it if you know it eg 001, if you don't know, you can leave it.</span><br>" +
+                "• <span style=\"color: #FFD700; font-weight: 500;\">DETAILS OF ORIGIN.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">HERE, on country select uganda, DISTRICT, select your district which is on your national ID, PLOT NO, put it eg 001, if you don't know, leave it.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">APPLICANT'S TRIBE, click in the space bar and select your tribe eg baamba, baganda, basoga, bagisu, choose one.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Give details of your clan, I recommend you to leave it, but you can put it if you know it.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Names of descendants, here you put your grandmother and grandfather's name eg Name of Descendant 1, NANTEZA, Descendant 2, KITAKA.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">CLICK save and continue.</span>"
+            },
+            {
+                title: "CITIZENSHIP",
                 desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
             },
             {
-                title: "Book Appointment & Biometrics",
-                desc: "Schedule your appointment date, print the application summary form, and visit Kyambogo for fingerprinting."
+                title: "SPOUSE",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
             },
             {
-                title: "Collection",
+                title: "PARENTS DETAILS",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+            {
+                title: "NEXT OF KIN",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            }, 
+            {
+                title: "RECOMMENDER",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+            {
+                title: "PAYMENT",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+            {
+                title: "REVIEW AND SUBMIT",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+            {
+                title: "SCHEDULE AN APPOINTMENT",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+            {
+                title: "CHECK APPLICATION STATUS",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+            {
+                title: "CORRECTION",
                 desc: "Receive an SMS notification when your express passport is ready for pickup at Kyambogo."
             }
         ]
