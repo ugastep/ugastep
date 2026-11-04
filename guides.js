@@ -108,6 +108,9 @@ const guidesData = [
                 "• <span style='color: #1e40af; font-weight: 500;'>PLOT NO, you can put it if you know it eg 001, if you don't know, you can leave it'.</span><br>" +
                  "• <span style='color: #FFD700; font-weight: 500;'>DETAILS OF ORIGIN'.</span><br>" +
                  "• <span style='color: #1e40af; font-weight: 500;'>HERE, on country select uganda,DISTRICT, select your district which is on your national ID,PLOT NO, put it eg 001 ,if you don't know, leave it'.</span><br>" +
+                "• <span style='color: #1e40af; font-weight: 500;'>APPLICANT'S TRIBE,click in the space bar and select your tribe eg baamba,baganda,basoga,bagisu,choose one'.</span><br>" +
+                "• <span style='color: #1e40af; font-weight: 500;'>Give a details of your clan, i recommend you to leave it, but you can put it if you know it'.</span><br>" +
+                "• <span style='color: #1e40af; font-weight: 500;'>Names of descendants, here you put your grand mother and grand father's name egName of Descendant 1, NANTEZA, Descendant 2,KITAKA'.</span><br>" +
                 
             },
             {
