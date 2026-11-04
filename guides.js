@@ -93,9 +93,8 @@ const guidesData = [
             },
            {
                 title: "THE APPLICANT",
-                desc: "Complete the online application form using these steps:<br><br>" +
-                    "• <span style='color: #1e40af; font-weight: 500;'>'HERE you going to fill your personal details as on your national ID'.</span><br>" +
-            }, 
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
             {
                 title: "CITIZENSHIP",
                 desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
