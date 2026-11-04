@@ -91,8 +91,40 @@ const guidesData = [
                      "• <span style='color: #1e40af; font-weight: 500;'>Place of collection: Click the space box below and choose the place where you will find your passport when it is done. Note: The place of submission you choose, I recommend you to be the place of collection for easy access.</span><br>" +
                      "• <span style='color: #1e40af; font-weight: 500;'>After filling that information, click save and continue.</span>"
             },
+           {
+                title: "THE APPLICANT",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            }, 
             {
-                title: "Generate Payment PRN",
+                title: "CITIZENSHIP",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+            {
+                title: "SPOUSE",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+            {
+                title: "PARENTS  DETAILS",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+           {
+                title: "NEXT OF KIN",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            }, 
+            {
+                title: "RECOMMENDER",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+            {
+                title: "PAYMENT",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+            {
+                title: "REVIEW AND SUBMIT",
+                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+            },
+            {
+                title: "SCHEDULE AN APPOINTMENT",
                 desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
             },
             {
