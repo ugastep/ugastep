@@ -128,11 +128,11 @@ const guidesData = [
                 desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
             },
             {
-                title: "Book Appointment & Biometrics",
+                title: "CHECK APPLICATION STATUS",
                 desc: "Schedule your appointment date, print the application summary form, and visit Kyambogo for fingerprinting."
             },
             {
-                title: "Collection",
+                title: "COLLECTION",
                 desc: "Receive an SMS notification when your express passport is ready for pickup at Kyambogo."
             }
         ]
