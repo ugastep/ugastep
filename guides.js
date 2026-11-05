@@ -130,31 +130,32 @@ const guidesData = [
             },
             {
                 title: "NEXT OF KIN",
-                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you put the details of the person you trust as you next of kin, could be your brother or sister or your daughter or son, any one you trust but must have a National ID. </span>"
             }, 
             {
                 title: "RECOMMENDER",
-                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you put information of the person who recommended you, his or her names on national ID, NiN no, every information, NOTE IF YOU DON'T HAVE A RECOMMENDER, whatsap me. +256762166117, I will recommend you. </span>"
             },
             {
                 title: "PAYMENT",
-                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
-            },
+                desc: 
+            },"• <span style=\"color: #1e40af; font-weight: 500;\"> Here you going to go to make a payment over the bank or using your mobile money. </span>"
             {
                 title: "REVIEW AND SUBMIT",
-                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you can review your details before submitting them, after confirming everything is right, then you submit. </span>"
             },
             {
                 title: "SCHEDULE AN APPOINTMENT",
-                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here, after everything is done, payment, details, you come back to the browser and type passport. Co. Ug, then click on schedule appointment, they will ask you to put some information eg your surname, date of birth and your passport ID eg W003543275, then submit, after some time you will receive a message on your phone telling you when to go for passport processing. </span>"
             },
             {
                 title: "CHECK APPLICATION STATUS",
-                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you check if your passport is ready to pick it, go to any browser and type passport. Co. Ug, click check status, put your surname, data of birth and passport number eg W003543275, if it's ready, you will find ready, if not yet, you will find pending. </span>
             },
             {
                 title: "CORRECTION",
-                desc: "Receive an SMS notification when your express passport is ready for pickup at Kyambogo."
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you will get a message on your phone saying your passport is ready, go to the place of collection you registered eg central office Kampala kyambogo, for your passport, time and date. </span>
+                    "• <span style=\"color: #1e40af; font-weight: 500;\">FOR MORE VIDEO EXPLANATION, WATCH THE VIDEO ABOVE, FOR SUPPORT, whatsap. +256762166117. </span >
             }
         ]
     },
