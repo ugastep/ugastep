@@ -118,11 +118,15 @@ const guidesData = [
             },
             {
                 title: "SPOUSE",
-                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+                desc: "HERE YOU PUT YOUR HASBAND OR WIFE'S NAMES if you have, if you don't have, leave it ."
             },
             {
                 title: "PARENTS DETAILS",
-                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+                desc: "• <span style=\"color: #FFD700; font-weight: 500;\">'FATHER'S DETAILS '.</span><br>" +
+                     "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you going to put your father's surname eg SENYONJO and given name EG FRED and on status, click in the space bar and choose, if Alive, put alive, if deceased, put deceased, put his data of birth, country of birth eg uganda, place of birth eg luweero,put his National ID NO (NIN), country of residence, put uganda, put a district on his National ID, Plot number, put it if you know it if you don't know, leave it, Nationality, click in the space bar and choose UGANDAN, Fathers tribe, click in the space bar and choose your father's tribe eg Basoga'.</span><br> " +
+                    "• <span style=\"color: #FFD700; font-weight: 500;\">'MOTHER'S DETAILS'. </span><br>" +
+                    "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you going to put your mother's information as it's on National id, like the way you did on father's details '. </span><br>" +
+                    "• <span style=\"color: #1e40af; font-weight: 500;\">After, click Save and continue'. </span><br>" +
             },
             {
                 title: "NEXT OF KIN",
