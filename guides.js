@@ -114,48 +114,48 @@ const guidesData = [
             },
             {
                 title: "CITIZENSHIP",
-                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Click in the space bar and choose BY BIRTH of you're born in uganda or BY REGISTRATION if you want to to become a Ugandan citizen or BY NEUTRALIZATION. </span>"
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Click in the space bar and choose BY BIRTH if you're born in Uganda or BY REGISTRATION if you want to become a Ugandan citizen or BY NATURALIZATION.</span>"
             },
             {
                 title: "SPOUSE",
-                desc: "HERE YOU PUT YOUR HASBAND OR WIFE'S NAMES if you have, if you don't have, leave it ."
+                desc: "HERE YOU PUT YOUR HUSBAND OR WIFE'S NAMES if you have, if you don't have, leave it."
             },
             {
                 title: "PARENTS DETAILS",
-                desc: "• <span style=\"color: #FFD700; font-weight: 500;\">'FATHER'S DETAILS '.</span><br>" +
-                     "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you going to put your father's surname eg SENYONJO and given name EG FRED and on status, click in the space bar and choose, if Alive, put alive, if deceased, put deceased, put his data of birth, country of birth eg uganda, place of birth eg luweero,put his National ID NO (NIN), country of residence, put uganda, put a district on his National ID, Plot number, put it if you know it if you don't know, leave it, Nationality, click in the space bar and choose UGANDAN, Fathers tribe, click in the space bar and choose your father's tribe eg Basoga'.</span><br> " +
-                    "• <span style=\"color: #FFD700; font-weight: 500;\">'MOTHER'S DETAILS'. </span><br>" +
-                    "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you going to put your mother's information as it's on National id, like the way you did on father's details '. </span><br>" +
-                    "• <span style=\"color: #1e40af; font-weight: 500;\">After, click Save and continue'. </span><br>" +
+                desc: "• <span style=\"color: #FFD700; font-weight: 500;\">'FATHER'S DETAILS'.</span><br>" +
+                      "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you are going to put your father's surname eg SENYONJO and given name eg FRED and on status, click in the space bar and choose, if Alive, put alive, if deceased, put deceased, put his date of birth, country of birth eg uganda, place of birth eg luweero, put his National ID NO (NIN), country of residence, put uganda, put a district on his National ID, Plot number, put it if you know it if you don't know, leave it, Nationality, click in the space bar and choose UGANDAN, Father's tribe, click in the space bar and choose your father's tribe eg Basoga.</span><br>" +
+                      "• <span style=\"color: #FFD700; font-weight: 500;\">'MOTHER'S DETAILS'.</span><br>" +
+                      "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you are going to put your mother's information as it is on National ID, like the way you did on father's details.</span><br>" +
+                      "• <span style=\"color: #1e40af; font-weight: 500;\">After, click Save and continue.</span>"
             },
             {
                 title: "NEXT OF KIN",
-                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you put the details of the person you trust as you next of kin, could be your brother or sister or your daughter or son, any one you trust but must have a National ID. </span>"
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you put the details of the person you trust as your next of kin, could be your brother or sister or your daughter or son, anyone you trust but must have a National ID.</span>"
             }, 
             {
                 title: "RECOMMENDER",
-                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you put information of the person who recommended you, his or her names on national ID, NiN no, every information, NOTE IF YOU DON'T HAVE A RECOMMENDER, whatsap me. +256762166117, I will recommend you. </span>"
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you put information of the person who recommended you, his or her names on national ID, NIN no, every information. NOTE: IF YOU DON'T HAVE A RECOMMENDER, whatsapp me at +256762166117, I will recommend you.</span>"
             },
             {
                 title: "PAYMENT",
-                desc: 
-            },"• <span style=\"color: #1e40af; font-weight: 500;\"> Here you going to go to make a payment over the bank or using your mobile money. </span>"
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you are going to go to make a payment over the bank or using your mobile money.</span>"
+            },
             {
                 title: "REVIEW AND SUBMIT",
-                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you can review your details before submitting them, after confirming everything is right, then you submit. </span>"
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you can review your details before submitting them, after confirming everything is right, then you submit.</span>"
             },
             {
                 title: "SCHEDULE AN APPOINTMENT",
-                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here, after everything is done, payment, details, you come back to the browser and type passport. Co. Ug, then click on schedule appointment, they will ask you to put some information eg your surname, date of birth and your passport ID eg W003543275, then submit, after some time you will receive a message on your phone telling you when to go for passport processing. </span>"
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here, after everything is done, payment, details, you come back to the browser and type passports.go.ug, then click on schedule appointment, they will ask you to put some information eg your surname, date of birth and your passport ID eg W003543275, then submit, after some time you will receive a message on your phone telling you when to go for passport processing.</span>"
             },
             {
                 title: "CHECK APPLICATION STATUS",
-                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you check if your passport is ready to pick it, go to any browser and type passport. Co. Ug, click check status, put your surname, data of birth and passport number eg W003543275, if it's ready, you will find ready, if not yet, you will find pending. </span>
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you check if your passport is ready to pick. Go to any browser and type passports.go.ug, click check status, put your surname, date of birth and passport number eg W003543275, if it's ready, you will find ready, if not yet, you will find pending.</span>"
             },
             {
                 title: "CORRECTION",
-                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you will get a message on your phone saying your passport is ready, go to the place of collection you registered eg central office Kampala kyambogo, for your passport, time and date. </span>
-                    "• <span style=\"color: #1e40af; font-weight: 500;\">FOR MORE VIDEO EXPLANATION, WATCH THE VIDEO ABOVE, FOR SUPPORT, whatsap. +256762166117. </span >
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you will get a message on your phone saying your passport is ready, go to the place of collection you registered eg central office Kampala Kyambogo, for your passport, time and date.</span><br>" +
+                      "• <span style=\"color: #1e40af; font-weight: 500;\">FOR MORE VIDEO EXPLANATION, WATCH THE VIDEO ABOVE, FOR SUPPORT, whatsapp +256762166117.</span>"
             }
         ]
     },
