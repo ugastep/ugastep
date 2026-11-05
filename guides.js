@@ -114,7 +114,7 @@ const guidesData = [
             },
             {
                 title: "CITIZENSHIP",
-                desc: "Generate a Payment Reference Number (PRN) and pay via mobile money or approved commercial banks."
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Click in the space bar and choose BY BIRTH of you're born in uganda or BY REGISTRATION if you want to to become a Ugandan citizen or BY NEUTRALIZATION. </span>"
             },
             {
                 title: "SPOUSE",
