@@ -387,48 +387,266 @@ const guidesData = [
         ]
     },
     {
-        id: "driving-permit",
-        title: "New Driving Permit Application (UDPS / SafeDEAL)",
-        category: "Transport & Travel",
-        agency: "Uganda Driving Permit System (Face Technologies)",
-        icon: "fa-id-card",
-        color: "bg-amber-50 text-amber-600 border-amber-200",
-        cost: "UGX 130,000 - 250,000 (Based on Class)",
-        time: "1 Working Day (Express)",
-        location: "Kyambogo / Regional Offices",
-        link: "https://www.udps.go.ug",
-        image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80",
-        videoEmbed: "https://www.youtube.com/embed/placeholder_driving_permit",
-        description: "How to transition from a learner's permit or renew your full Ugandan driving license through authorized evaluation centers.",
-        documents: [
-            "Valid Learner Driving Permit",
-            "Certificate of Competence from IOV",
-            "National ID (NIN)",
-            "URA Payment Receipt (PRN)"
-        ],
-        steps: [
-            {
-                title: "Undergo Eye Test & Medical",
-                desc: "Visit an authorized medical optometrist and doctor to clear your fitness for driving."
-            },
-            {
-                title: "Pass Inspectorate of Vehicles (IOV) Test",
-                desc: "Book and pass the practical driving test conducted by the Uganda Police IOV."
-            },
-            {
-                title: "Generate URA PRN Payment",
-                desc: "Log onto URA portal, generate payment registration for driving permit fees according to your vehicle classes."
-            },
-            {
-                title: "Visit Licensing Office for Biometrics",
-                desc: "Take your paperwork and payment slips to Kyambogo or regional issuance centers for photo & fingerprint capture."
-            },
-            {
-                title: "Print & Collect Permit",
-                desc: "Wait for processing and receive your smart driving card on the same day."
-            }
-        ]
+    id: "driving-permit-complete-suite",
+    title: "Uganda Driving Permit System - Complete Services Guide",
+    category: "Transport & Travel",
+    agency: "Ministry of Works & Transport (Uganda Driver Licensing System - UDLS)",
+    icon: "fa-id-card",
+    color: "bg-amber-50 text-amber-600 border-amber-200",
+    cost: "Varies by transaction (UGX 25,000 to UGX 330,000+)",
+    time: "Same-day card issuance (1 to 2 hours at Kyambogo / Regional UDLS centers)",
+    location: "Kyambogo (Main Head Office) / Regional Issuance Centers (Gulu, Arua, Mbale, Jinja, Mbarara, Fort Portal, Hoima)",
+    link: "https://services.works.go.ug",
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80",
+    videoEmbed: "https://www.youtube.com/embed/usMF93DdE-Q",
+    description: "Complete unified code object containing step-by-step guides, payment instructions, class eligibility rules, customer support contacts, and exact URA/UDLS fee breakdowns for all driving permit services in Uganda.",
+    
+    // 1. CUSTOMER SUPPORT & ASSISTANCE CONTACTS
+    supportContacts: {
+        tollFreeHelpline: "0800 211 002",
+        officialEmail: "info@udls.co.ug",
+        officialPortal: "https://udls.co.ug",
+        eservicesPortal: "https://services.works.go.ug"
     },
+
+    // 2. OFFICIAL FEE STRUCTURE & PRICING
+    feeStructure: {
+        learnerPermit: {
+            standardClasses: 60000, // Class B, C, D, E etc. (3 Months validity)
+            motorcycleOnly: 40000   // Class A1, A, B1 only
+        },
+        policeIovTestFee: {
+            feePerClassAttempt: 25000
+        },
+        newFullPermit: {
+            validity1Year: 135000,
+            validity3Years: 230000,
+            validity5Years: 330000
+        },
+        permitRenewal: {
+            standardClasses: { yr1: 130000, yr3: 210000, yr5: 310000 },
+            motorcycleClassesOnly: { yr1: 70000, yr3: 100000, yr5: 200000 },
+            lapsedRule: "Permits expired >2 years are classified as lapsed and require a mandatory IOV practical retest (UGX 25,000) prior to renewal"
+        },
+        classExtension: {
+            standardClasses: 121000,
+            motorcycleClassesOnly: 60000,
+            policeTestFee: 25000
+        },
+        duplicatePermit: {
+            replacementFee: 121000,
+            policeAbstractFee: 10000,
+            gazetteAdvertFee: 30000
+        },
+        foreignExchangePermit: {
+            validity1Year: 135000,
+            validity3Years: 230000,
+            validity5Years: 330000
+        }
+    },
+
+    // 3. VEHICLE CLASS ELIGIBILITY MATRIX
+    vehicleClasses: [
+        { class: "A1", category: "Light Motorcycles (up to 125cc / 11kW)", minAge: 18, prerequisites: "None" },
+        { class: "A", category: "Heavy Motorcycles (over 125cc / 11kW)", minAge: 18, prerequisites: "None" },
+        { class: "B1", category: "Tricycles and Quadricycles (Tuk-tuks)", minAge: 18, prerequisites: "None" },
+        { class: "B", category: "Passenger Cars & Light Goods (up to 3,500kg, max 8 passengers)", minAge: 18, prerequisites: "None" },
+        { class: "BE", category: "Class B Vehicle towing heavy trailer (> 750kg)", minAge: 19, prerequisites: "Hold Class B" },
+        { class: "C1", category: "Medium Goods Vehicles (3,500kg to 7,500kg)", minAge: 21, prerequisites: "Hold Class B for at least 2 years" },
+        { class: "C", category: "Heavy Commercial Goods Vehicles / Heavy Trucks (> 7,500kg)", minAge: 25, prerequisites: "Hold Class C1" },
+        { class: "CE", category: "Heavy Goods Vehicle with Heavy Trailer (Articulated Trucks)", minAge: 25, prerequisites: "Hold Class C" },
+        { class: "D1", category: "Light Passenger Vehicles / Minibuses (9 to 16 passenger seats)", minAge: 21, prerequisites: "Hold Class B for at least 2 years" },
+        { class: "D", category: "Heavy Passenger Vehicles / Coasters & Buses (over 16 seats)", minAge: 25, prerequisites: "Hold Class D1" },
+        { class: "DE", category: "Heavy Passenger Bus towing trailer", minAge: 25, prerequisites: "Hold Class D" },
+        { class: "F", category: "Engineering Plant & Heavy Machinery (Graders, Bulldozers, Excavators)", minAge: 18, prerequisites: "Specialized Training" },
+        { class: "G", category: "Agricultural & Industrial Tractors", minAge: 18, prerequisites: "None" }
+    ],
+
+    // 4. PAYMENT PORTAL INSTRUCTIONS
+    paymentGuide: {
+        onlinePortal: "services.works.go.ug or www.ura.go.ug",
+        mobileMoneyChannels: {
+            mtnCode: "*165# -> Option 4 (Payments) -> Option 7 (URA Fees) -> Enter PRN",
+            airtelCode: "*185# -> Option 4 (Pay Bills) -> Option 7 (URA Fees) -> Enter PRN"
+        },
+        overTheCounter: "Any URA-integrated commercial bank (Stanbic, Centenary, Absa, DFCU, Equity, etc.)"
+    },
+
+    // 5. STEP-BY-STEP SERVICE GUIDES
+    services: [
+        {
+            serviceId: "new-permit",
+            serviceName: "1. New Driving Permit Application",
+            totalCost: "UGX 220,000 - 415,000 (Learner + IOV Test + Main Permit + Driving School)",
+            requiredDocuments: [
+                "National ID / NIN (Ugandans), Valid Passport + Visa/Work Permit (Foreigners), or Refugee Identity Card",
+                "Medical Examination Form UCDP1 (Stamped by registered Doctor/Optometrist)",
+                "Driving School Training Completion Certificate",
+                "Learner Driving Permit (Provisional Card)",
+                "IOV Police Certificate of Competence",
+                "Paid URA Receipts / PRNs"
+            ],
+            steps: [
+                {
+                    stepNumber: 1,
+                    title: "Apply & Obtain Learner Permit First",
+                    desc: "Do this: Log onto services.works.go.ug or URA portal, generate PRN for 'Learner Permit' (UGX 60,000 or UGX 40,000 for motorcycle), and pay via mobile money or bank. After this: Report to UDLS with your National ID to capture biometrics and collect your physical Learner Permit."
+                },
+                {
+                    stepNumber: 2,
+                    title: "Undergo Medical Examination",
+                    desc: "Do this: Download Medical Form UCDP1 from UDLS portal and take it to a registered medical doctor or optometrist. After this: Doctor conducts physical and visual eye checks, then signs and stamps the form."
+                },
+                {
+                    stepNumber: 3,
+                    title: "Enroll in a Licensed Driving School",
+                    desc: "Do this: Present your Learner Permit and Medical Form to a certified driving school for theory and practical lessons. After this: Complete driving lessons to receive your official Driving School Completion Certificate."
+                },
+                {
+                    stepNumber: 4,
+                    title: "Pay & Pass IOV Driving Test",
+                    desc: "Do this: Generate URA PRN for Inspectorate of Vehicles (IOV) Test Fee (UGX 25,000 per class), pay via mobile money (*165# / *185#) or bank, and report to IOV center with your driving instructor. After this: Pass the practical driving test to have your police Certificate of Competence transmitted to UDLS."
+                },
+                {
+                    stepNumber: 5,
+                    title: "Apply Online & Upload Scanned Documents",
+                    desc: "Do this: Log into udls.co.ug / services.works.go.ug, fill in personal details, select 'Get a New Driver License', and upload clear PDF/JPG scans (under 5MB each) of National ID/Passport, stamped Medical Form, IOV Certificate, and Driving School Certificate. After this: System verifies document completeness."
+                },
+                {
+                    stepNumber: 6,
+                    title: "Generate URA PRN & Pay Full Permit Fee",
+                    desc: "Do this: On the portal, select permit duration (1 Year: UGX 135,000 | 3 Years: UGX 230,000 | 5 Years: UGX 330,000), generate PRN, and clear payment via bank or Mobile Money. After this: Print payment confirmation receipt."
+                },
+                {
+                    stepNumber: 7,
+                    title: "UDLS Office Biometrics Capture",
+                    desc: "Do this: Walk into Kyambogo or regional UDLS office carrying your original National ID, stamped Medical Form, IOV certificate, Learner Permit, and paid receipts. After this: UDLS staff scan physical files and capture facial photo, fingerprints, and digital signature."
+                },
+                {
+                    stepNumber: 8,
+                    title: "Wait & Collect Smart Permit Card",
+                    desc: "Do this: Relax in the waiting lounge. After this: Collect your official physical Ugandan Driving Permit card on the same day (usually ready within 1 to 2 hours)."
+                }
+            ]
+        },
+        {
+            serviceId: "permit-renewal",
+            serviceName: "2. Driving Permit Renewal (Expired or Lapsed Permit)",
+            totalCost: "UGX 130,000 - 335,000 (Based on validity, vehicle class & lapse status)",
+            requiredDocuments: [
+                "Original Expired Driving Permit Card",
+                "National ID (NIN) / Passport / Refugee ID",
+                "Stamped Medical Form UCDP1 (Mandatory if over 40 years old or if permit is lapsed)",
+                "Paid URA Renewal Receipt (PRN)",
+                "IOV Certificate of Competence (Only required if permit has been expired >2 years)"
+            ],
+            steps: [
+                {
+                    stepNumber: 1,
+                    title: "Check Permit Status & Medical Check",
+                    desc: "Do this: If your permit has been expired for over 2 years, pay UGX 25,000 PRN for IOV retest and pass practical exam first. Complete Medical Form UCDP1 with a doctor if required."
+                },
+                {
+                    stepNumber: 2,
+                    title: "Apply Online & Upload Supporting Documents",
+                    desc: "Do this: Log into udls.co.ug, select 'Renewing a Driver License', enter NIN or permit number, and upload old permit scan, National ID, medical form, and IOV retest certificate (if lapsed)."
+                },
+                {
+                    stepNumber: 3,
+                    title: "Pay Renewal PRN Fee",
+                    desc: "Do this: Select renewal duration (1, 3, or 5 years), generate PRN, and pay via bank or Mobile Money (*165#/*185#)."
+                },
+                {
+                    stepNumber: 4,
+                    title: "Collect Renewed Card at UDLS",
+                    desc: "Do this: Present expired card, medical form, ID, and paid PRN receipt to any UDLS center. After this: Re-verify biometrics and collect your new renewed card on the spot."
+                }
+            ]
+        },
+        {
+            serviceId: "duplicate-permit",
+            serviceName: "3. Duplicate Permit (Lost, Stolen, or Defaced Card)",
+            totalCost: "UGX 121,000 URA Fee + Police Abstract & Gazette Notice Expenses",
+            requiredDocuments: [
+                "Official Police Loss Report / Abstract",
+                "Newspaper Gazette Loss Announcement (published at least 2 weeks prior)",
+                "National ID / Passport / Refugee ID",
+                "Defaced/Damaged card (if replacing damaged card)"
+            ],
+            steps: [
+                {
+                    stepNumber: 1,
+                    title: "Obtain Police Report & Publish Notice",
+                    desc: "Do this: File loss report at police station for a Police Abstract, then publish a public loss notification in a recognized national newspaper."
+                },
+                {
+                    stepNumber: 2,
+                    title: "Pay Duplicate Permit PRN",
+                    desc: "Do this: Log into services.works.go.ug / URA portal, select 'Duplicate Driving Permit', generate PRN for UGX 121,000, and clear payment."
+                },
+                {
+                    stepNumber: 3,
+                    title: "Biometrics & Replacement Collection",
+                    desc: "Do this: Take Police Abstract, newspaper cutting, ID, and paid PRN receipt to UDLS office. After this: Verification team checks system database and re-issues your duplicate smart card."
+                }
+            ]
+        },
+        {
+            serviceId: "class-extension",
+            serviceName: "4. Class Extension (Adding New Vehicle Category)",
+            totalCost: "UGX 146,000 - 181,000 (Extension Fee + IOV Test Fee)",
+            requiredDocuments: [
+                "Valid Existing Ugandan Driving Permit",
+                "Driving School Certificate for target vehicle class",
+                "Police IOV Certificate of Competence for new class",
+                "Stamped Medical Form UCDP1 (Mandatory for medium/heavy commercial & passenger classes)"
+            ],
+            steps: [
+                {
+                    stepNumber: 1,
+                    title: "Train & Pass IOV Practical Test",
+                    desc: "Do this: Complete driving lessons for target class (e.g., C1, C, D1, D, E), pay UGX 25,000 IOV test PRN, and pass police driving exam."
+                },
+                {
+                    stepNumber: 2,
+                    title: "Pay Class Extension Fee",
+                    desc: "Do this: Access services.works.go.ug, select 'Class Extension', enter current permit number, generate PRN (UGX 121,000 standard or UGX 60,000 motorcycle), and pay."
+                },
+                {
+                    stepNumber: 3,
+                    title: "Card Update at UDLS",
+                    desc: "Do this: Hand in current driving permit card along with IOV certificate, medical form, and paid receipt at UDLS center. After this: Receive updated permit printing all your verified driving classes."
+                }
+            ]
+        },
+        {
+            serviceId: "foreign-conversion",
+            serviceName: "5. Foreign License Conversion (Foreign Exchange)",
+            totalCost: "UGX 135,000 - 330,000 (Based on converted validity duration)",
+            requiredDocuments: [
+                "Valid Original Foreign Driving License",
+                "Certified English Translation (if foreign license is not in English)",
+                "Valid Original Passport + Valid Resident Visa / Work Permit / Alien ID (minimum 1 year validity)",
+                "Stamped Medical Examination Form UCDP1"
+            ],
+            steps: [
+                {
+                    stepNumber: 1,
+                    title: "Medical Checkup & Verification",
+                    desc: "Do this: Get physical/visual health checked on Form UCDP1 by a registered doctor and ensure work visa/passport details match foreign license."
+                },
+                {
+                    stepNumber: 2,
+                    title: "Pay Foreign Exchange PRN",
+                    desc: "Do this: Select 'Foreign License Conversion' on services.works.go.ug or URA portal, pick validity (1 Yr: UGX 135,000 | 3 Yrs: UGX 230,000 | 5 Yrs: UGX 330,000), generate PRN, and pay."
+                },
+                {
+                    stepNumber: 3,
+                    title: "Biometrics & Permit Conversion at UDLS",
+                    desc: "Do this: Report to UDLS office with original foreign license, passport, visa/work permit, medical form, and paid PRN receipt. After this: Capture biometrics and receive equivalent Ugandan Driving Permit card."
+                }
+            ]
+   },     
     {
         id: "ursb-business",
         title: "Registering a Company Name with URSB",
