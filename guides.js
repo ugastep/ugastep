@@ -300,45 +300,45 @@ const guidesData = [
             },
             {
                 title: "Fill Out Application Form",
-                desc: "Complete the online application form using these steps:<br><br>" +
-                "• <span style=\"color: #FFD700; font-weight: 500;\">'STEP ONE'.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Select 'Apply for Passport' and click 'Start New Application'.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Accept the terms and conditions by clicking the 'Accept' box.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Click 'START' and scroll down to fill in your personal information.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Input your valid phone number starting with the country code (e.g., +256700000001).</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Input a valid email address (e.g., nsambajohn@gmail.com).</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Choose a security question from the dropdown and type your answer.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span><br><br>" +
-                "• <span style=\"color: #FFD700; font-weight: 500;\">'STEP TWO'.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">After save and continue, the next step is the application.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Here you are going to choose passport type, type of application, priority, place of submission and place of collection.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Passport type: Click the space box below and choose the passport type accordingly, eg 'Ordinary - For general Ugandans, Diplomatic - For only Ugandan diplomats, And Service / Official - For high-level Government officials'.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Type of application: Click the space box below and choose, eg 'New application for only those who never got passport before, Renewal for those who ever got but gets expired, Change of details for those who got passport before but they have information to change on their passports, Damaged for those when their passport got spoiled AND Lost for only who lost their passports'.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Priority: Click the space box below and choose your priority. If you want ordinary, click ordinary; if you want express, click express based on period you want your passport. For ordinary UGX 250,000 (1-2 weeks), for express UGX 400,000 (2-3 days).</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Place of submission: Click the space box and choose where easily you can go to make your passport, eg Jinja, central office Kampala, Arua, Gulu, choose one according to where you are.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Place of collection: Click the space box below and choose the place where you will find your passport when it is done. Note: The place of submission you choose, I recommend you to be the place of collection for easy access.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">After filling that information, click save and continue.</span>"
+                desc: `Complete the online application form using these steps:<br><br>
+• <span style="color: #FFD700; font-weight: 500;">'STEP ONE'.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Select 'Apply for Passport' and click 'Start New Application'.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Accept the terms and conditions by clicking the 'Accept' box.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Click 'START' and scroll down to fill in your personal information.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Input your valid phone number starting with the country code (e.g., +256700000001).</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Input a valid email address (e.g., nsambajohn@gmail.com).</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Choose a security question from the dropdown and type your answer.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span><br><br>
+• <span style="color: #FFD700; font-weight: 500;">'STEP TWO'.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">After save and continue, the next step is the application.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Here you are going to choose passport type, type of application, priority, place of submission and place of collection.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Passport type: Click the space box below and choose the passport type accordingly, eg 'Ordinary - For general Ugandans, Diplomatic - For only Ugandan diplomats, And Service / Official - For high-level Government officials'.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Type of application: Click the space box below and choose, eg 'New application for only those who never got passport before, Renewal for those who ever got but gets expired, Change of details for those who got passport before but they have information to change on their passports, Damaged for those when their passport got spoiled AND Lost for only who lost their passports'.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Priority: Click the space box below and choose your priority. If you want ordinary, click ordinary; if you want express, click express based on period you want your passport. For ordinary UGX 250,000 (1-2 weeks), for express UGX 400,000 (2-3 days).</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Place of submission: Click the space box and choose where easily you can go to make your passport, eg Jinja, central office Kampala, Arua, Gulu, choose one according to where you are.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Place of collection: Click the space box below and choose the place where you will find your passport when it is done. Note: The place of submission you choose, I recommend you to be the place of collection for easy access.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">After filling that information, click save and continue.</span>`
             },
             {
                 title: "THE APPLICANT",
-                desc: "• <span style=\"color: #FFD700; font-weight: 500;\">'PERSONAL DETAILS'.</span><br>" +
-                "HERE you are going to put your personal details as it is on your NATIONAL ID:<br><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">PUT a surname eg NANYONJO and a Given name eg CATHY.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Put a NATIONAL ID NO (NIN) eg CM980471001GHK or CF980471001GHK.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Choose your gender, eg male or female.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">PUT your date of birth as it is on your NATIONAL ID.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Marital status, click the space bar and select eg single, married, divorced, etc, choose one.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Country of BIRTH, put UGANDA, Place of birth, put a place you were born eg KAYUNGA, profession/occupation, CLICK in the space bar and select one eg EDUCATION.</span><br>" +
-                "• <span style=\"color: #FFD700; font-weight: 500;\">'RESIDENTIAL ADDRESS'.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">CLICK the space bar and choose your country of residence eg UGANDA.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">DISTRICT, click the space box and choose your district eg kampala, kayunga, kamuli, etc NOTE: THE DISTRICT YOU CHOOSE MUST BE THE ONE ON YOUR NATIONAL ID.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">PLOT NO, you can put it if you know it eg 001, if you don't know, you can leave it.</span><br>" +
-                "• <span style=\"color: #FFD700; font-weight: 500;\">DETAILS OF ORIGIN.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">HERE, on country select uganda, DISTRICT, select your district which is on your national ID, PLOT NO, put it eg 001, if you don't know, leave it.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">APPLICANT'S TRIBE, click in the space bar and select your tribe eg baamba, baganda, basoga, bagisu, choose one.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Give details of your clan, I recommend you to leave it, but you can put it if you know it.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">Names of descendants, here you put your grandmother and grandfather's name eg Name of Descendant 1, NANTEZA, Descendant 2, KITAKA.</span><br>" +
-                "• <span style=\"color: #1e40af; font-weight: 500;\">CLICK save and continue.</span>"
+                desc: `• <span style="color: #FFD700; font-weight: 500;">'PERSONAL DETAILS'.</span><br>
+HERE you are going to put your personal details as it is on your NATIONAL ID:<br><br>
+• <span style="color: #1e40af; font-weight: 500;">PUT a surname eg NANYONJO and a Given name eg CATHY.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Put a NATIONAL ID NO (NIN) eg CM980471001GHK or CF980471001GHK.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Choose your gender, eg male or female.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">PUT your date of birth as it is on your NATIONAL ID.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Marital status, click the space bar and select eg single, married, divorced, etc, choose one.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Country of BIRTH, put UGANDA, Place of birth, put a place you were born eg KAYUNGA, profession/occupation, CLICK in the space bar and select one eg EDUCATION.</span><br>
+• <span style="color: #FFD700; font-weight: 500;">'RESIDENTIAL ADDRESS'.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">CLICK the space bar and choose your country of residence eg UGANDA.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">DISTRICT, click the space box and choose your district eg kampala, kayunga, kamuli, etc NOTE: THE DISTRICT YOU CHOOSE MUST BE THE ONE ON YOUR NATIONAL ID.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">PLOT NO, you can put it if you know it eg 001, if you don't know, you can leave it.</span><br>
+• <span style="color: #FFD700; font-weight: 500;">DETAILS OF ORIGIN.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">HERE, on country select uganda, DISTRICT, select your district which is on your national ID, PLOT NO, put it eg 001, if you don't know, leave it.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">APPLICANT'S TRIBE, click in the space bar and select your tribe eg baamba, baganda, basoga, bagisu, choose one.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Give details of your clan, I recommend you to leave it, but you can put it if you know it.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">Names of descendants, here you put your grandmother and grandfather's name eg Name of Descendant 1, NANTEZA, Descendant 2, KITAKA.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">CLICK save and continue.</span>`
             },
             {
                 title: "CITIZENSHIP",
@@ -350,15 +350,15 @@ const guidesData = [
             },
             {
                 title: "PARENTS DETAILS",
-                desc: "• <span style=\"color: #FFD700; font-weight: 500;\">'FATHER'S DETAILS'.</span><br>" +
-                      "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you are going to put your father's surname eg SENYONJO and given name eg FRED and on status, click in the space bar and choose, if Alive, put alive, if deceased, put deceased, put his date of birth, country of birth eg uganda, place of birth eg luweero, put his National ID NO (NIN), country of residence, put uganda, put a district on his National ID, Plot number, put it if you know it if you don't know, leave it, Nationality, click in the space bar and choose UGANDAN, Father's tribe, click in the space bar and choose your father's tribe eg Basoga.</span><br>" +
-                      "• <span style=\"color: #FFD700; font-weight: 500;\">'MOTHER'S DETAILS'.</span><br>" +
-                      "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you are going to put your mother's information as it is on National ID After click SAVE AND CONTINUE .</span>"
+                desc: `• <span style="color: #FFD700; font-weight: 500;">'FATHER'S DETAILS'.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">HERE you are going to put your father's surname eg SENYONJO and given name eg FRED and on status, click in the space bar and choose, if Alive, put alive, if deceased, put deceased, put his date of birth, country of birth eg uganda, place of birth eg luweero, put his National ID NO (NIN), country of residence, put uganda, put a district on his National ID, Plot number, put it if you know it if you don't know, leave it, Nationality, click in the space bar and choose UGANDAN, Father's tribe, click in the space bar and choose your father's tribe eg Basoga.</span><br>
+• <span style="color: #FFD700; font-weight: 500;">'MOTHER'S DETAILS'.</span><br>
+• <span style="color: #1e40af; font-weight: 500;">HERE you are going to put your mother's information as it is on National ID After click SAVE AND CONTINUE .</span>`
             },
             {
                 title: "NEXT OF KIN",
                 desc: "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you put the details of the person you trust as your next of kin, could be your brother or sister or your daughter or son, anyone you trust but must have a National ID.</span>"
-            }, 
+            },
             {
                 title: "RECOMMENDER",
                 desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you put information of the person who recommended you, his or her names on national ID, NIN no, every information. NOTE: IF YOU DON'T HAVE A RECOMMENDER, whatsapp me at +256762166117, I will recommend you.</span>"
@@ -382,185 +382,176 @@ const guidesData = [
             {
                 title: "CORRECTION",
                 desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you will get a message on your phone saying your passport is ready, go to the place of collection you registered eg central office Kampala Kyambogo, for your passport, time and date.</span><br>" +
-                      "• <span style=\"color: #1e40af; font-weight: 500;\">FOR MORE VIDEO EXPLANATION, WATCH THE VIDEO ABOVE, FOR SUPPORT, whatsapp +256762166117.</span>"
+                    "• <span style=\"color: #1e40af; font-weight: 500;\">FOR MORE VIDEO EXPLANATION, WATCH THE VIDEO ABOVE, FOR SUPPORT, whatsapp +256762166117.</span>"
             }
         ]
     },
     {
-    id: "uganda-driving-permit-system",
-    title: "Uganda Driving Permit System (UDLS / MoWT) Complete Guide",
-    category: "Transport & Travel",
-    agency: "Ministry of Works & Transport (Uganda Driver Licensing System - UDLS)",
-    icon: "fa-id-card",
-    color: "bg-amber-50 text-amber-600 border-amber-200",
-    cost: "Varies by service (UGX 25,000 to UGX 330,000+)",
-    time: "Same-day card issuance (1 to 2 hours at Kyambogo / Regional UDLS centers)",
-    location: "Kyambogo (Main Head Office) / Regional Issuance Centers (Gulu, Arua, Mbale, Jinja, Mbarara, Fort Portal, Hoima)",
-    link: "https://services.works.go.ug",
-    portal: "https://udls.co.ug",
-    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80",
-    videoEmbed: "https://www.youtube.com/embed/usMF93DdE-Q",
-    description: "Complete unified code structure covering step-by-step guides, official fee schedules, class eligibility rules, and payment protocols for all Ugandan driving permit transactions.",
-    
-    // 1. SUPPORT CONTACTS
-    supportContacts: {
-        tollFreeHelpline: "0800 211 002",
-        officialEmail: "info@udls.co.ug",
-        officialPortal: "https://udls.co.ug",
-        eservicesPortal: "https://services.works.go.ug"
+        id: "uganda-driving-permit-system",
+        title: "Uganda Driving Permit System (UDLS / MoWT) Complete Guide",
+        category: "Transport & Travel",
+        agency: "Ministry of Works & Transport (Uganda Driver Licensing System - UDLS)",
+        icon: "fa-id-card",
+        color: "bg-amber-50 text-amber-600 border-amber-200",
+        cost: "Varies by service (UGX 25,000 to UGX 330,000+)",
+        time: "Same-day card issuance (1 to 2 hours at Kyambogo / Regional UDLS centers)",
+        location: "Kyambogo (Main Head Office) / Regional Issuance Centers (Gulu, Arua, Mbale, Jinja, Mbarara, Fort Portal, Hoima)",
+        link: "https://services.works.go.ug",
+        portal: "https://udls.co.ug",
+        image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/usMF93DdE-Q",
+        description: "Complete unified code structure covering step-by-step guides, official fee schedules, class eligibility rules, and payment protocols for all Ugandan driving permit transactions.",
+        supportContacts: {
+            tollFreeHelpline: "0800 211 002",
+            officialEmail: "info@udls.co.ug",
+            officialPortal: "https://udls.co.ug",
+            eservicesPortal: "https://services.works.go.ug"
+        },
+        feeStructure: {
+            learnerPermit: {
+                standardClasses: 60000,
+                motorcycleClassesOnly: 40000,
+                validityDuration: "3 Months"
+            },
+            policeIovTestFee: {
+                feePerClassAttempt: 25000
+            },
+            newFullPermit: {
+                validity1Year: 135000,
+                validity3Years: 230000,
+                validity5Years: 330000
+            },
+            permitRenewal: {
+                standardClasses: { yr1: 130000, yr3: 210000, yr5: 310000 },
+                motorcycleClassesOnly: { yr1: 70000, yr3: 100000, yr5: 200000 },
+                lapsedRule: "Permits expired over 24 months require an IOV practical retest (UGX 25,000) before renewal."
+            },
+            classExtension: {
+                standardClasses: 121000,
+                motorcycleClassesOnly: 60000,
+                policeTestFee: 25000
+            },
+            duplicatePermit: {
+                replacementFee: 121000,
+                policeAbstractFee: 10000,
+                gazetteAdvertFee: 30000
+            },
+            foreignExchangePermit: {
+                validity1Year: 135000,
+                validity3Years: 230000,
+                validity5Years: 330000
+            }
+        },
+        vehicleClasses: [
+            { class: "A1", category: "Light Motorcycles (up to 125cc / 11kW)", minAge: 18, prerequisites: "None" },
+            { class: "A", category: "Heavy Motorcycles (over 125cc / 11kW)", minAge: 18, prerequisites: "None" },
+            { class: "B1", category: "Tricycles and Quadricycles (Tuk-tuks)", minAge: 18, prerequisites: "None" },
+            { class: "B", category: "Passenger Cars & Light Goods (up to 3,500kg, max 8 passengers)", minAge: 18, prerequisites: "None" },
+            { class: "BE", category: "Class B Vehicle towing heavy trailer (> 750kg)", minAge: 19, prerequisites: "Hold Class B" },
+            { class: "C1", category: "Medium Goods Vehicles (3,500kg to 7,500kg)", minAge: 21, prerequisites: "Hold Class B for 2+ years" },
+            { class: "C", category: "Heavy Commercial Goods Vehicles / Trucks (> 7,500kg)", minAge: 25, prerequisites: "Hold Class C1" },
+            { class: "CE", category: "Heavy Goods Vehicle with Heavy Trailer (Articulated Trucks)", minAge: 25, prerequisites: "Hold Class C" },
+            { class: "D1", category: "Light Passenger Vehicles / Minibuses (9 to 16 seats)", minAge: 21, prerequisites: "Hold Class B for 2+ years" },
+            { class: "D", category: "Heavy Passenger Vehicles / Coasters & Buses (over 16 seats)", minAge: 25, prerequisites: "Hold Class D1" },
+            { class: "DE", category: "Heavy Passenger Bus towing trailer", minAge: 25, prerequisites: "Hold Class D" },
+            { class: "F", category: "Engineering Plant & Heavy Machinery (Bulldozers, Excavators)", minAge: 18, prerequisites: "Specialized Training" },
+            { class: "G", category: "Agricultural & Industrial Tractors", minAge: 18, prerequisites: "None" }
+        ],
+        paymentGuide: {
+            onlinePortal: "services.works.go.ug or www.ura.go.ug",
+            mobileMoney: {
+                mtnCode: "*165# -> Option 4 (Payments) -> Option 7 (URA Fees) -> Enter PRN",
+                airtelCode: "*185# -> Option 4 (Pay Bills) -> Option 7 (URA Fees) -> Enter PRN"
+            },
+            overTheCounter: "Any URA-integrated commercial bank (Centenary, Stanbic, Absa, DFCU, Equity, etc.)"
+        },
+        services: [
+            {
+                serviceId: "new-permit",
+                serviceName: "New Driving Permit Application",
+                totalCost: "UGX 220,000 - 415,000 (Learner + IOV Test + Main Permit + Driving School)",
+                requiredDocuments: [
+                    "National ID / NIN (Ugandans), Valid Passport + Visa/Work Permit (Foreigners), or Refugee Identity Card",
+                    "Medical Examination Form UCDP1 (Stamped by registered Doctor/Optometrist)",
+                    "Driving School Training Completion Certificate",
+                    "Learner Driving Permit (Provisional Card)",
+                    "IOV Police Certificate of Competence",
+                    "Paid URA Payment Receipts (PRNs)"
+                ],
+                steps: [
+                    {
+                        stepNumber: 1,
+                        title: "Apply & Get Learner Permit First",
+                        desc: "Do this: Log onto services.works.go.ug, generate PRN for 'Learner Permit' (UGX 60,000 or UGX 40,000 for motorcycle), and pay via mobile money or bank. After this: Visit UDLS with your National ID to capture biometrics and collect your physical Learner Permit."
+                    },
+                    {
+                        stepNumber: 2,
+                        title: "Undergo Medical Examination",
+                        desc: "Do this: Download Medical Form UCDP1 from the UDLS portal and take it to a registered medical doctor or optometrist. After this: The doctor conducts physical and vision tests, then signs and stamps the form."
+                    },
+                    {
+                        stepNumber: 3,
+                        title: "Enroll in a Licensed Driving School",
+                        desc: "Do this: Present your Learner Permit and Medical Form to a certified driving school for lessons. After this: Complete driving training to receive your official Driving School Completion Certificate."
+                    },
+                    {
+                        stepNumber: 4,
+                        title: "Pay & Pass IOV Driving Test",
+                        desc: "Do this: Generate a URA PRN for the Police IOV Test Fee (UGX 25,000 per class), pay it, and report to the IOV testing center. After this: Pass the practical test so your police Certificate of Competence is digitally sent to UDLS."
+                    },
+                    {
+                        stepNumber: 5,
+                        title: "Apply Online & Upload Documents",
+                        desc: "Do this: Log into udls.co.ug or services.works.go.ug, select 'Get a New Driver License', and upload clear scans of your ID, Medical Form, IOV Certificate, and Driving School Certificate. After this: Verify details."
+                    },
+                    {
+                        stepNumber: 6,
+                        title: "Generate URA PRN & Pay Main Permit Fee",
+                        desc: "Do this: Select permit duration (1 Yr: UGX 135,000 | 3 Yrs: UGX 230,000 | 5 Yrs: UGX 330,000), generate PRN, and clear payment via bank or mobile money. After this: Print payment receipt."
+                    },
+                    {
+                        stepNumber: 7,
+                        title: "UDLS Biometrics Capture",
+                        desc: "Do this: Report to Kyambogo or a regional UDLS office carrying all original physical files and paid receipts. After this: UDLS staff capture your photo, fingerprints, and digital signature."
+                    },
+                    {
+                        stepNumber: 8,
+                        title: "Wait & Collect Smart Permit Card",
+                        desc: "Do this: Wait in the lounge area. After this: Collect your official smart Ugandan Driving Permit card (ready within 1 to 2 hours)."
+                    }
+                ]
+            },
+            {
+                serviceId: "permit-renewal",
+                serviceName: "Driving Permit Renewal",
+                totalCost: "UGX 130,000 - 335,000 (Based on validity & vehicle class)",
+                requiredDocuments: [
+                    "Original Expired Driving Permit Card",
+                    "National ID (NIN) / Passport / Refugee ID",
+                    "Stamped Medical Form UCDP1",
+                    "Paid URA Renewal PRN Receipt",
+                    "IOV Certificate of Competence (Only if permit has been expired over 2 years)"
+                ],
+                steps: [
+                    {
+                        stepNumber: 1,
+                        title: "Medical Check & Retest Check",
+                        desc: "Do this: If permit is expired >2 years, pay UGX 25,000 IOV retest PRN and pass practical exam first. Complete Medical Form UCDP1 with a doctor."
+                    },
+                    {
+                        stepNumber: 2,
+                        title: "Generate Renewal PRN & Pay",
+                        desc: "Do this: Select 'Driving Permit Renewal' on services.works.go.ug, pick duration (1, 3, or 5 years), generate PRN, and pay via bank or mobile money."
+                    },
+                    {
+                        stepNumber: 3,
+                        title: "Biometrics & Collection at UDLS",
+                        desc: "Do this: Bring expired card, medical form, ID, and receipt to UDLS. After this: Verify biometrics and collect your renewed permit card."
+                    }
+                ]
+            }
+        ]
     },
-
-    // 2. OFFICIAL FEE STRUCTURE (UGX)
-    feeStructure: {
-        learnerPermit: {
-            standardClasses: 60000,
-            motorcycleClassesOnly: 40000,
-            validityDuration: "3 Months"
-        },
-        policeIovTestFee: {
-            feePerClassAttempt: 25000
-        },
-        newFullPermit: {
-            validity1Year: 135000,
-            validity3Years: 230000,
-            validity5Years: 330000
-        },
-        permitRenewal: {
-            standardClasses: { yr1: 130000, yr3: 210000, yr5: 310000 },
-            motorcycleClassesOnly: { yr1: 70000, yr3: 100000, yr5: 200000 },
-            lapsedRule: "Permits expired over 24 months require an IOV practical retest (UGX 25,000) before renewal."
-        },
-        classExtension: {
-            standardClasses: 121000,
-            motorcycleClassesOnly: 60000,
-            policeTestFee: 25000
-        },
-        duplicatePermit: {
-            replacementFee: 121000,
-            policeAbstractFee: 10000,
-            gazetteAdvertFee: 30000
-        },
-        foreignExchangePermit: {
-            validity1Year: 135000,
-            validity3Years: 230000,
-            validity5Years: 330000
-        }
-    },
-
-    // 3. VEHICLE CLASS ELIGIBILITY MATRIX
-    vehicleClasses: [
-        { class: "A1", category: "Light Motorcycles (up to 125cc / 11kW)", minAge: 18, prerequisites: "None" },
-        { class: "A", category: "Heavy Motorcycles (over 125cc / 11kW)", minAge: 18, prerequisites: "None" },
-        { class: "B1", category: "Tricycles and Quadricycles (Tuk-tuks)", minAge: 18, prerequisites: "None" },
-        { class: "B", category: "Passenger Cars & Light Goods (up to 3,500kg, max 8 passengers)", minAge: 18, prerequisites: "None" },
-        { class: "BE", category: "Class B Vehicle towing heavy trailer (> 750kg)", minAge: 19, prerequisites: "Hold Class B" },
-        { class: "C1", category: "Medium Goods Vehicles (3,500kg to 7,500kg)", minAge: 21, prerequisites: "Hold Class B for 2+ years" },
-        { class: "C", category: "Heavy Commercial Goods Vehicles / Trucks (> 7,500kg)", minAge: 25, prerequisites: "Hold Class C1" },
-        { class: "CE", category: "Heavy Goods Vehicle with Heavy Trailer (Articulated Trucks)", minAge: 25, prerequisites: "Hold Class C" },
-        { class: "D1", category: "Light Passenger Vehicles / Minibuses (9 to 16 seats)", minAge: 21, prerequisites: "Hold Class B for 2+ years" },
-        { class: "D", category: "Heavy Passenger Vehicles / Coasters & Buses (over 16 seats)", minAge: 25, prerequisites: "Hold Class D1" },
-        { class: "DE", category: "Heavy Passenger Bus towing trailer", minAge: 25, prerequisites: "Hold Class D" },
-        { class: "F", category: "Engineering Plant & Heavy Machinery (Bulldozers, Excavators)", minAge: 18, prerequisites: "Specialized Training" },
-        { class: "G", category: "Agricultural & Industrial Tractors", minAge: 18, prerequisites: "None" }
-    ],
-
-    // 4. PAYMENT INSTRUCTIONS
-    paymentGuide: {
-        onlinePortal: "services.works.go.ug or www.ura.go.ug",
-        mobileMoney: {
-            mtnCode: "*165# -> Option 4 (Payments) -> Option 7 (URA Fees) -> Enter PRN",
-            airtelCode: "*185# -> Option 4 (Pay Bills) -> Option 7 (URA Fees) -> Enter PRN"
-        },
-        overTheCounter: "Any URA-integrated commercial bank (Centenary, Stanbic, Absa, DFCU, Equity, etc.)"
-    },
-
-    // 5. SERVICE GUIDES
-    services: [
-        {
-            serviceId: "new-permit",
-            serviceName: "New Driving Permit Application",
-            totalCost: "UGX 220,000 - 415,000 (Learner + IOV Test + Main Permit + Driving School)",
-            requiredDocuments: [
-                "National ID / NIN (Ugandans), Valid Passport + Visa/Work Permit (Foreigners), or Refugee Identity Card",
-                "Medical Examination Form UCDP1 (Stamped by registered Doctor/Optometrist)",
-                "Driving School Training Completion Certificate",
-                "Learner Driving Permit (Provisional Card)",
-                "IOV Police Certificate of Competence",
-                "Paid URA Payment Receipts (PRNs)"
-            ],
-            steps: [
-                {
-                    stepNumber: 1,
-                    title: "Apply & Get Learner Permit First",
-                    desc: "Do this: Log onto services.works.go.ug, generate PRN for 'Learner Permit' (UGX 60,000 or UGX 40,000 for motorcycle), and pay via mobile money or bank. After this: Visit UDLS with your National ID to capture biometrics and collect your physical Learner Permit."
-                },
-                {
-                    stepNumber: 2,
-                    title: "Undergo Medical Examination",
-                    desc: "Do this: Download Medical Form UCDP1 from the UDLS portal and take it to a registered medical doctor or optometrist. After this: The doctor conducts physical and vision tests, then signs and stamps the form."
-                },
-                {
-                    stepNumber: 3,
-                    title: "Enroll in a Licensed Driving School",
-                    desc: "Do this: Present your Learner Permit and Medical Form to a certified driving school for lessons. After this: Complete driving training to receive your official Driving School Completion Certificate."
-                },
-                {
-                    stepNumber: 4,
-                    title: "Pay & Pass IOV Driving Test",
-                    desc: "Do this: Generate a URA PRN for the Police IOV Test Fee (UGX 25,000 per class), pay it, and report to the IOV testing center. After this: Pass the practical test so your police Certificate of Competence is digitally sent to UDLS."
-                },
-                {
-                    stepNumber: 5,
-                    title: "Apply Online & Upload Documents",
-                    desc: "Do this: Log into udls.co.ug or services.works.go.ug, select 'Get a New Driver License', and upload clear scans of your ID, Medical Form, IOV Certificate, and Driving School Certificate. After this: Verify details."
-                },
-                {
-                    stepNumber: 6,
-                    title: "Generate URA PRN & Pay Main Permit Fee",
-                    desc: "Do this: Select permit duration (1 Yr: UGX 135,000 | 3 Yrs: UGX 230,000 | 5 Yrs: UGX 330,000), generate PRN, and clear payment via bank or mobile money. After this: Print payment receipt."
-                },
-                {
-                    stepNumber: 7,
-                    title: "UDLS Biometrics Capture",
-                    desc: "Do this: Report to Kyambogo or a regional UDLS office carrying all original physical files and paid receipts. After this: UDLS staff capture your photo, fingerprints, and digital signature."
-                },
-                {
-                    stepNumber: 8,
-                    title: "Wait & Collect Smart Permit Card",
-                    desc: "Do this: Wait in the lounge area. After this: Collect your official smart Ugandan Driving Permit card (ready within 1 to 2 hours)."
-                }
-            ]
-        },
-        {
-            serviceId: "permit-renewal",
-            serviceName: "Driving Permit Renewal",
-            totalCost: "UGX 130,000 - 335,000 (Based on validity & vehicle class)",
-            requiredDocuments: [
-                "Original Expired Driving Permit Card",
-                "National ID (NIN) / Passport / Refugee ID",
-                "Stamped Medical Form UCDP1",
-                "Paid URA Renewal PRN Receipt",
-                "IOV Certificate of Competence (Only if permit has been expired over 2 years)"
-            ],
-            steps: [
-                {
-                    stepNumber: 1,
-                    title: "Medical Check & Retest Check",
-                    desc: "Do this: If permit is expired >2 years, pay UGX 25,000 IOV retest PRN and pass practical exam first. Complete Medical Form UCDP1 with a doctor."
-                },
-                {
-                    stepNumber: 2,
-                    title: "Generate Renewal PRN & Pay",
-                    desc: "Do this: Select 'Driving Permit Renewal' on services.works.go.ug, pick duration (1, 3, or 5 years), generate PRN, and pay via bank or mobile money."
-                },
-                {
-                    stepNumber: 3,
-                    title: "Biometrics & Collection at UDLS",
-                    desc: "Do this: Bring expired card, medical form, ID, and receipt to UDLS. After this: Verify biometrics and collect your renewed permit card."
-                }
-            ]
-         
-     },            
     {
         id: "ursb-business",
         title: "Registering a Company Name with URSB",
