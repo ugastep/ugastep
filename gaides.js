@@ -1,0 +1,561 @@
+// Step-by-step guides data referenced by script ID
+const guidesData = [
+    {
+        id: "ura-tin-individual",
+        title: "How to Register for an Individual URA Tax TIN",
+        category: "Civic & Tax",
+        agency: "Uganda Revenue Authority (URA)",
+        icon: "fa-file-invoice-dollar",
+        color: "bg-emerald-50 text-emerald-600 border-emerald-200",
+        cost: "100% Free (No government or agent fees)",
+        time: "10 - 20 Minutes (Online)",
+        location: "URA Portal (www.ura.go.ug) or any physical URA Station / TaxHub nationwide",
+        link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_tin",
+        description: "A Tax Identification Number (TIN) is a unique 10-digit identity code issued free of charge by URA. You need it in Uganda to get formal employment, open a bank account, buy land/property worth over 50 Million UGX, register a company, or clear goods at customs.",
+        support: {
+            tollFree: "0800 117 000 / 0800 217 000",
+            email: "services@ura.go.ug",
+            whatsapp: "+256 772 140 000",
+            headquarters: "URA Tower, Plot 1-4, Nakawa Industrial Area, Kampala"
+        },
+        documents: [
+            "Ugandan Citizens: Valid National ID (NIN number)",
+            "Foreign Residents: Valid Passport + Work Permit / Alien ID",
+            "Refugees: UNHCR Refugee Card or OPM Attestation Letter",
+            "Active personal email address (must be able to access inbox immediately)",
+            "Active phone number (registered in taxpayer name for SMS OTPs)",
+            "Physical Address details (District, County, Sub-county, Parish, Village)"
+        ],
+        steps: [
+            {
+                title: "Step 1: Go to the Official URA Website",
+                desc: "WHERE TO GO: Open your web browser on a phone or computer and type 'www.ura.go.ug'.\n\nWHAT TO DO: Look at the top menu bar, click on 'e-Services', and then click on 'TIN Registration' (or click the main button that says 'Instant TIN').\n\nWHAT'S NEXT: The website will open a clean online registration form. Move to Step 2 to choose your tax category.",
+                image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80"
+            },
+            {
+                title: "Step 2: Choose 'Individual' & Verify Your Email Address",
+                desc: "WHERE TO GO: The taxpayer category section at the top of the form.\n\nWHAT TO DO: Click on 'Individual'. Type your active email address (Example: john.kato@gmail.com) and click 'Send Code'. Open your email inbox in a new browser tab, copy the 6-digit security code sent by URA (Example: 849201), switch back to the URA page, type the code into the box, and click 'Verify'.\n\nWHAT'S NEXT: Once your email is verified, the portal unlocks the identity verification section. Move to Step 3.",
+                image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80"
+            },
+            {
+                title: "Step 3: Enter Your National ID (NIN) to Auto-Load Your Details",
+                desc: "WHERE TO GO: The identity details section on the portal.\n\nWHAT TO DO: Select 'Ugandan Citizen'. Look at your National ID card and type your 14-character NIN (Example: CM90012345678A) and your exact Date of Birth. Click 'Validate'. The portal will talk directly to NIRA to automatically bring up your official legal names, date of birth, and gender.\n\nWHAT'S NEXT: Your personal details are now locked and verified against official government records. Move to Step 4 to fill in your contact and location details."
+            },
+            {
+                title: "Step 4: Fill in Your Phone Number, Address & Income Source",
+                desc: "WHERE TO GO: The contact, location, and employment fields.\n\nWHAT TO DO: Enter your active phone number (Example: 0772000000). Select your primary source of income from the dropdown list (Example: Select 'Employment' if employed, or 'Business' if self-employed). Select your residence details from the drop-down menus: District (e.g., Kampala), County (e.g., Kyadondo), Sub-County (e.g., Nakawa), Parish, and Village. If employed, enter your employer's TIN to link PAYE taxes.\n\nWHAT'S NEXT: Now that all required fields are complete, move to Step 5 to double-check and submit."
+            },
+            {
+                title: "Step 5: Review Your Details and Click 'Submit' (UGX 0 Cost)",
+                desc: "WHERE TO GO: Bottom of the registration page.\n\nWHAT TO DO: Scroll back up to review all inputs for accuracy. Tick the declaration box stating 'I declare that the information provided is true'. Solve the security captcha challenge (tick 'I am not a robot') and click the green 'Submit' button. Cost: UGX 0. No payment or processing fees are required.\n\nWHAT'S NEXT: The system will generate your TIN instantly or within 24 hours. Move to Step 6 to get your TIN certificate."
+            },
+            {
+                title: "Step 6: Receive Your 10-Digit TIN & Download Your Certificate",
+                desc: "WHERE TO GO: Your phone SMS, email inbox, and www.ura.go.ug login page.\n\nWHAT TO DO: Check your phone and email. URA will send your new 10-digit TIN (Example: 1012345678) and temporary password. Re-open www.ura.go.ug, click 'Login' at the top right, enter your TIN and password, go to 'My Certificates', and click 'Download TIN Certificate' to print your PDF.\n\nWHAT'S NEXT: You now have an active TIN! Keep your credentials safe for bank, employer, or business needs."
+            }
+        ],
+        troubleshooting: [
+            {
+                issue: "NIRA System Timeout Error",
+                solution: "WHAT TO DO NEXT: If the site says NIRA is unavailable, servers are busy. Retry early in the morning (before 8 AM) or late evening, or visit a physical URA branch for manual assistance."
+            },
+            {
+                issue: "Email Already Registered Error",
+                solution: "WHAT TO DO NEXT: Each email can only link to one TIN. Type a different email address or use account recovery if you registered previously."
+            }
+        ]
+    },
+    {
+        id: "ura-tin-corporate",
+        title: "How to Register for a Non-Individual (Company/Business) URA Tax TIN",
+        category: "Civic & Tax",
+        agency: "Uganda Revenue Authority (URA)",
+        icon: "fa-building",
+        color: "bg-blue-50 text-blue-600 border-blue-200",
+        cost: "100% Free (Online via URSB Integration)",
+        time: "1 - 2 Working Days",
+        location: "URA Web Portal (www.ura.go.ug) / URSB Online Services System",
+        link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_corporate_tin",
+        description: "A mandatory corporate Tax Identification Number for registered Limited Liability Companies, Partnerships, NGOs, Cooperatives, and Trusts operating in Uganda.",
+        support: {
+            tollFree: "0800 117 000 / 0800 217 000",
+            email: "services@ura.go.ug",
+            whatsapp: "+256 772 140 000",
+            headquarters: "URA Tower, Plot 1-4, Nakawa Industrial Area, Kampala"
+        },
+        documents: [
+            "Valid URSB Certificate of Incorporation or Registration",
+            "Memorandum & Articles of Association (MEMARTS) or Partnership Deed",
+            "Valid Individual TINs and National IDs for at least two Company Directors",
+            "Official company email address and active corporate phone number",
+            "Physical business address details (Plot Number, Building Name, Street, District)"
+        ],
+        steps: [
+            {
+                title: "Step 1: Access URA Non-Individual TIN Workspace",
+                desc: "WHERE TO GO: Go to www.ura.go.ug -> Click 'e-Services' -> Select 'Non-Individual TIN Registration'.\n\nWHAT TO DO: Click 'Start New Registration' to begin the corporate tax portal application.\n\nWHAT'S NEXT: Move to Step 2 to enter your business incorporation details."
+            },
+            {
+                title: "Step 2: Enter URSB Registration Number & Validate Business",
+                desc: "WHERE TO GO: Business Registration Details section on the portal.\n\nWHAT TO DO: Select your entity type (e.g., Limited Liability Company). Type your exact URSB Registration Number (Example: 80020000123456) and Incorporation Date. Click 'Validate'. The portal pulls verified company names and share structure from URSB databases.\n\nWHAT'S NEXT: Move to Step 3 to add directors and your designated tax representative."
+            },
+            {
+                title: "Step 3: Enter Directors' TINs & Designate Tax Representative",
+                desc: "WHERE TO GO: Directors and Officers section.\n\nWHAT TO DO: Input the active individual TINs and NINs of at least two company directors. Assign one director or qualified accountant as the official Tax Representative responsible for submitting monthly/annual tax filings.\n\nWHAT'S NEXT: Move to Step 4 to specify physical company premises and financial dates."
+            },
+            {
+                title: "Step 4: Provide Business Address & Financial Year Period",
+                desc: "WHERE TO GO: Address and Accounting details section.\n\nWHAT TO DO: Enter physical office location details (Example: Plot 12, Kampala Road, Kingdom Kampala Building, Nakawa Division). Select your financial accounting cycle (e.g., July 1st to June 30th).\n\nWHAT'S NEXT: Move to Step 5 to review corporate entries and submit."
+            },
+            {
+                title: "Step 5: Review & Submit Corporate Application (UGX 0 Cost)",
+                desc: "WHERE TO GO: Application summary and declaration footer.\n\nWHAT TO DO: Double-check that all director TINs and URSB data match your official company documents. Tick the legal declaration box, complete the captcha challenge, and click 'Submit'. Processing cost is free (UGX 0).\n\nWHAT'S NEXT: Move to Step 6 to receive and print your Corporate TIN Certificate."
+            },
+            {
+                title: "Step 6: Receive Corporate Credentials & Download Certificate",
+                desc: "WHERE TO GO: Official company email inbox and www.ura.go.ug login dashboard.\n\nWHAT TO DO: Once approved by URA (within 24 hours), check company email for your 10-digit Corporate TIN (Example: 5001234567) and portal password. Log in at www.ura.go.ug, go to 'My Certificates', and download the PDF for commercial bank account opening."
+            }
+        ]
+    },
+    {
+        id: "ura-prn-payment",
+        title: "How to Generate a PRN & Pay Taxes on the URA Portal",
+        category: "Payments & PRN",
+        agency: "Uganda Revenue Authority (URA)",
+        icon: "fa-credit-card",
+        color: "bg-purple-50 text-purple-600 border-purple-200",
+        cost: "PRN Generation is Free (You pay only the tax liability or statutory fee)",
+        time: "5 Minutes",
+        location: "URA Portal / Mobile Money (*165# or *185#) / Commercial Banks nationwide",
+        link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_prn",
+        description: "A Payment Registration Number (PRN) is a mandatory 13-digit code generated on the URA website whenever you pay tax, stamp duty, motor vehicle fees, court fees, or penalties in Uganda.",
+        documents: [
+            "Your 10-digit URA TIN",
+            "Exact payment amount in Ugandan Shillings (UGX)",
+            "Mobile Money account (MTN/Airtel) or Bank account details"
+        ],
+        steps: [
+            {
+                title: "Step 1: Open the URA Payment Registration Page",
+                desc: "WHERE TO GO: Go to www.ura.go.ug.\n\nWHAT TO DO: Click 'e-Services' on the top navigation bar, then click 'Payment Registration' (Generate PRN).\n\nWHAT'S NEXT: The e-Payment portal will open. Move to Step 2 to identify yourself and choose the tax head."
+            },
+            {
+                title: "Step 2: Enter Your TIN & Select Tax Head",
+                desc: "WHERE TO GO: Taxpayer and Payment Type section.\n\nWHAT TO DO: Type your 10-digit TIN (Example: 1012345678). Your name will display automatically. Click on the 'Tax Head' dropdown menu and select the payment reason (Example: Select 'Income Tax', 'Stamp Duty', 'Motor Vehicle Registration', or 'Local Service Tax').\n\nWHAT'S NEXT: Move to Step 3 to specify the exact amount of money to pay."
+            },
+            {
+                title: "Step 3: Enter Payment Amount & Select Mode of Payment",
+                desc: "WHERE TO GO: Payment Details section.\n\nWHAT TO DO: Type the exact amount in Shillings into the 'Amount' box (Example: 100000 for UGX 100,000). Under 'Payment Mode', select how you plan to complete payment: choose 'Mobile Money' or 'Bank Teller'.\n\nWHAT'S NEXT: Move to Step 4 to generate your official 13-digit payment code."
+            },
+            {
+                title: "Step 4: Click 'Submit' & Save Your 13-Digit PRN",
+                desc: "WHERE TO GO: Screen output popup after clicking submit.\n\nWHAT TO DO: Click the green 'Submit' button. The portal displays a payment slip containing a 13-digit reference code called a PRN (Example: 2240001234567). Write down this 13-digit number or take a screenshot.\n\nWHAT'S NEXT: Move to Step 5 to execute the payment using your phone or bank."
+            },
+            {
+                title: "Step 5: Execute Payment via Mobile Money or Bank Branch",
+                desc: "WHERE TO GO: Mobile phone USSD or any commercial bank teller desk.\n\nWHAT TO DO (Mobile Money):\n• MTN: Dial *165# -> Select 'Pay Taxes / URA' -> Enter 13-digit PRN -> Confirm taxpayer name -> Enter PIN.\n• Airtel: Dial *185# -> Select 'Pay Taxes / URA' -> Enter 13-digit PRN -> Confirm details -> Enter PIN.\nWHAT TO DO (Bank): Walk into any commercial bank counter, present your 13-digit PRN, and hand over cash.\n\nWHAT'S NEXT: Move to Step 6 to verify that URA received your money."
+            },
+            {
+                title: "Step 6: Receive Confirmation SMS & Check Tax Ledger",
+                desc: "WHERE TO GO: Your phone SMS and www.ura.go.ug login dashboard.\n\nWHAT TO DO: Within 2 minutes, you will receive payment confirmation via SMS. Log into your URA account, go to 'My Tax Ledger', and verify that the payment status displays 'PAID'. Keep the SMS receipt for your records."
+            }
+        ]
+    },
+    {
+        id: "ura-nil-returns",
+        title: "How to File a URA Nil Return (Avoid Penalties)",
+        category: "Tax Compliance",
+        agency: "Uganda Revenue Authority (URA)",
+        icon: "fa-file-signature",
+        color: "bg-amber-50 text-amber-600 border-amber-200",
+        cost: "100% Free",
+        time: "5 Minutes",
+        location: "URA Web Portal (www.ura.go.ug)",
+        link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_nil_returns",
+        description: "If you have an active URA TIN but earned zero income or did not run business operations during a tax year/month, you MUST legally file a 'Nil Return' on the URA portal before the deadline (June 30th for annual income tax) to avoid automatic late-filing fines of UGX 200,000+ per return.",
+        documents: [
+            "Active 10-digit URA TIN",
+            "URA Web Portal Password"
+        ],
+        steps: [
+            {
+                title: "Step 1: Log into the URA Portal Workspace",
+                desc: "WHERE TO GO: Open www.ura.go.ug and click the red 'Login' button at the top right.\n\nWHAT TO DO: Enter your 10-digit TIN (Example: 1012345678) and password, solve the math captcha (e.g., 5 + 3 = 8), and click 'Login'.\n\nWHAT'S NEXT: Your e-Tax dashboard will open. Move to Step 2 to access returns."
+            },
+            {
+                title: "Step 2: Navigate to Returns -> File Nil Return",
+                desc: "WHERE TO GO: Main portal navigation bar inside your dashboard.\n\nWHAT TO DO: Click on 'Returns' on the top menu, then select 'File Nil Return' from the dropdown list.\n\nWHAT'S NEXT: Move to Step 3 to select the tax type and period."
+            },
+            {
+                title: "Step 3: Select Tax Obligation & Return Period",
+                desc: "WHERE TO GO: Nil Return input fields.\n\nWHAT TO DO: Under 'Tax Obligation', select 'Income Tax - Individual' (or 'VAT' if registered). Select the return period start and end date (e.g., From 01/07/2025 To 30/06/2026 for annual returns).\n\nWHAT'S NEXT: Move to Step 4 to submit your Nil return."
+            },
+            {
+                title: "Step 4: Submit Return & Download Acknowledgement Receipt",
+                desc: "WHERE TO GO: Submission prompt.\n\nWHAT TO DO: Click 'Submit'. The system will process your return and display an acknowledgement receipt confirming zero tax liability. Click 'Download Receipt' and save the PDF copy.\n\nWHAT'S NEXT: You are completely compliant! No fine will be charged to your TIN for that period."
+            }
+        ]
+    },
+    {
+        id: "ura-password-reset",
+        title: "How to Recover Lost TIN or Reset URA Password",
+        category: "Account Recovery",
+        agency: "Uganda Revenue Authority (URA)",
+        icon: "fa-key",
+        color: "bg-red-50 text-red-600 border-red-200",
+        cost: "100% Free",
+        time: "3 - 5 Minutes",
+        location: "URA Web Portal (www.ura.go.ug)",
+        link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_reset",
+        description: "Recover your forgotten 10-digit URA Tax Identification Number or reset your e-Tax portal account password instantly using your registered email address or National ID.",
+        documents: [
+            "National Identification Number (NIN)",
+            "Registered mobile phone number or email inbox"
+        ],
+        steps: [
+            {
+                title: "Step 1: Access URA Login / Recovery Page",
+                desc: "WHERE TO GO: Go to www.ura.go.ug -> Click 'Login' -> Click 'Forgot Password?' or 'Find My TIN'.\n\nWHAT TO DO: Choose whether you are recovering your TIN number or resetting your portal password.\n\nWHAT'S NEXT: Move to Step 2 to enter your registered details."
+            },
+            {
+                title: "Step 2: Enter National ID (NIN) & Request OTP",
+                desc: "WHERE TO GO: Identity recovery form.\n\nWHAT TO DO: Type your 14-character NIN (Example: CM90012345678A) and registered email or phone number. Click 'Send Reset Link / OTP'.\n\nWHAT'S NEXT: Move to Step 3 to verify identity and set a new password."
+            },
+            {
+                title: "Step 3: Enter OTP & Set New Password",
+                desc: "WHERE TO GO: Email inbox / SMS and portal reset screen.\n\nWHAT TO DO: Open the SMS/email sent by URA, copy the reset code, paste it into the portal prompt, and type a new secure password (must include letters, numbers, and a symbol like Ura#2026).\n\nWHAT'S NEXT: Click 'Save Password'. You can now log into your URA portal account immediately."
+            }
+        ]
+    },
+    {
+        id: "ura-motor-vehicle-transfer",
+        title: "How to Transfer Motor Vehicle / Motorcycle Ownership",
+        category: "Vehicles & Property",
+        agency: "Uganda Revenue Authority (URA)",
+        icon: "fa-car",
+        color: "bg-indigo-50 text-indigo-600 border-indigo-200",
+        cost: "Transfer Fees + Stamp Duty (1% of vehicle value, minimum UGX 30,000 PRN)",
+        time: "1 to 3 Working Days",
+        location: "URA Portal / Physical Vehicle Inspection Center",
+        link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_vehicle",
+        description: "Legal transfer of motor vehicle or motorcycle (boda-boda) registration logbook from a seller to a buyer in Uganda using URA e-Tax portal transfer PINs.",
+        documents: [
+            "Original Vehicle Logbook",
+            "Signed Transfer Form (Form 10) & Sales Agreement",
+            "Active URA TINs for both Seller and Buyer",
+            "Copies of National IDs for both parties"
+        ],
+        steps: [
+            {
+                title: "Step 1: Seller Initiates Transfer on URA Portal",
+                desc: "WHERE TO GO: Seller logs into www.ura.go.ug -> Click 'Motor Vehicle' -> Select 'Initiate Ownership Transfer'.\n\nWHAT TO DO: Seller enters vehicle registration number (e.g., UBG 123X) and buyer's 10-digit TIN. System generates a Seller Transfer PIN.\n\nWHAT'S NEXT: Move to Step 2 for buyer acceptance."
+            },
+            {
+                title: "Step 2: Buyer Accepts Transfer & Generates PRN",
+                desc: "WHERE TO GO: Buyer logs into www.ura.go.ug -> Click 'Motor Vehicle' -> Select 'Accept Ownership Transfer'.\n\nWHAT TO DO: Buyer enters vehicle number and Seller Transfer PIN. Portal calculates statutory stamp duty (1%) and transfer fees, then generates a payment PRN.\n\nWHAT'S NEXT: Move to Step 3 to pay the PRN fees."
+            },
+            {
+                title: "Step 3: Pay Transfer Fees & Submit Logbook for Printing",
+                desc: "WHERE TO GO: Mobile Money (*165#/*185#) or Bank -> Physical URA Vehicle Registry Center.\n\nWHAT TO DO: Pay the PRN fee via Mobile Money or Bank. Take physical vehicle inspection report, original logbook, sales agreement, and payment receipts to the nearest URA vehicle licensing office (e.g., Nakawa / regional branch) to collect your new digital logbook.\n\nWHAT'S NEXT: Ownership transfer is 100% complete!"
+            }
+        ]
+    },
+    {
+        id: "express-passport",
+        title: "How to Apply for Ordinary or Express Passport Step by Step in Uganda",
+        category: "Identification",
+        agency: "Directorate of Citizenship & Immigration Control",
+        icon: "fa-passport",
+        color: "bg-blue-50 text-blue-600 border-blue-200",
+        cost: "UGX 400,000 (Express) and UGX 250,000 Normal (Ordinary) Fee",
+        time: "3 - 5 Working Days",
+        location: "DCIC Headquarters, Kyambogo",
+        link: "https://passports.go.ug",
+        image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_passport",
+        description: "Step-by-step procedure to acquire a machine-readable or e-passport through the Ministry of Internal Affairs online portal.",
+        documents: [
+            "National Identity Card (NIN)",
+            "Recommendation letter from LC1 & GIS0",
+            "Birth Certificate / Baptism Card",
+            "Bank Payment Receipt (PRN)"
+        ],
+        steps: [
+            {
+                title: "Access the Passport Portal",
+                link: "https://passports.go.ug",
+                desc: "<span style=\"color: #1e40af; font-weight: 500;\">Navigate to the official passport application portal. Go to your browser, type www.passports.go.ug, or click the link to access the site. It will display the Ministry of Internal Affairs Directorate of Citizenship & Immigration Control portal.</span>"
+            },
+            {
+                title: "Fill Out Application Form",
+                desc: "Complete the online application form using these steps:<br><br>" +
+                "• <span style=\"color: #FFD700; font-weight: 500;\">'STEP ONE'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Select 'Apply for Passport' and click 'Start New Application'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Accept the terms and conditions by clicking the 'Accept' box.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Click 'START' and scroll down to fill in your personal information.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Input your valid phone number starting with the country code (e.g., +256700000001).</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Input a valid email address (e.g., nsambajohn@gmail.com).</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Choose a security question from the dropdown and type your answer.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Enter the verification text shown in the captcha image, then click 'Save and Continue'.</span><br><br>" +
+                "• <span style=\"color: #FFD700; font-weight: 500;\">'STEP TWO'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">After save and continue, the next step is the application.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Here you are going to choose passport type, type of application, priority, place of submission and place of collection.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Passport type: Click the space box below and choose the passport type accordingly, eg 'Ordinary - For general Ugandans, Diplomatic - For only Ugandan diplomats, And Service / Official - For high-level Government officials'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Type of application: Click the space box below and choose, eg 'New application for only those who never got passport before, Renewal for those who ever got but gets expired, Change of details for those who got passport before but they have information to change on their passports, Damaged for those when their passport got spoiled AND Lost for only who lost their passports'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Priority: Click the space box below and choose your priority. If you want ordinary, click ordinary; if you want express, click express based on period you want your passport. For ordinary UGX 250,000 (1-2 weeks), for express UGX 400,000 (2-3 days).</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Place of submission: Click the space box and choose where easily you can go to make your passport, eg Jinja, central office Kampala, Arua, Gulu, choose one according to where you are.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Place of collection: Click the space box below and choose the place where you will find your passport when it is done. Note: The place of submission you choose, I recommend you to be the place of collection for easy access.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">After filling that information, click save and continue.</span>"
+            },
+            {
+                title: "THE APPLICANT",
+                desc: "• <span style=\"color: #FFD700; font-weight: 500;\">'PERSONAL DETAILS'.</span><br>" +
+                "HERE you are going to put your personal details as it is on your NATIONAL ID:<br><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">PUT a surname eg NANYONJO and a Given name eg CATHY.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Put a NATIONAL ID NO (NIN) eg CM980471001GHK or CF980471001GHK.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Choose your gender, eg male or female.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">PUT your date of birth as it is on your NATIONAL ID.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Marital status, click the space bar and select eg single, married, divorced, etc, choose one.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Country of BIRTH, put UGANDA, Place of birth, put a place you were born eg KAYUNGA, profession/occupation, CLICK in the space bar and select one eg EDUCATION.</span><br>" +
+                "• <span style=\"color: #FFD700; font-weight: 500;\">'RESIDENTIAL ADDRESS'.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">CLICK the space bar and choose your country of residence eg UGANDA.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">DISTRICT, click the space box and choose your district eg kampala, kayunga, kamuli, etc NOTE: THE DISTRICT YOU CHOOSE MUST BE THE ONE ON YOUR NATIONAL ID.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">PLOT NO, you can put it if you know it eg 001, if you don't know, you can leave it.</span><br>" +
+                "• <span style=\"color: #FFD700; font-weight: 500;\">DETAILS OF ORIGIN.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">HERE, on country select uganda, DISTRICT, select your district which is on your national ID, PLOT NO, put it eg 001, if you don't know, leave it.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">APPLICANT'S TRIBE, click in the space bar and select your tribe eg baamba, baganda, basoga, bagisu, choose one.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Give details of your clan, I recommend you to leave it, but you can put it if you know it.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">Names of descendants, here you put your grandmother and grandfather's name eg Name of Descendant 1, NANTEZA, Descendant 2, KITAKA.</span><br>" +
+                "• <span style=\"color: #1e40af; font-weight: 500;\">CLICK save and continue.</span>"
+            },
+            {
+                title: "CITIZENSHIP",
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Click in the space bar and choose BY BIRTH if you're born in Uganda or BY REGISTRATION if you want to become a Ugandan citizen or BY NATURALIZATION.</span>"
+            },
+            {
+                title: "SPOUSE",
+                desc: "HERE YOU PUT YOUR HUSBAND OR WIFE'S NAMES if you have, if you don't have, leave it."
+            },
+            {
+                title: "PARENTS DETAILS",
+                desc: "• <span style=\"color: #FFD700; font-weight: 500;\">'FATHER'S DETAILS'.</span><br>" +
+                      "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you are going to put your father's surname eg SENYONJO and given name eg FRED and on status, click in the space bar and choose, if Alive, put alive, if deceased, put deceased, put his date of birth, country of birth eg uganda, place of birth eg luweero, put his National ID NO (NIN), country of residence, put uganda, put a district on his National ID, Plot number, put it if you know it if you don't know, leave it, Nationality, click in the space bar and choose UGANDAN, Father's tribe, click in the space bar and choose your father's tribe eg Basoga.</span><br>" +
+                      "• <span style=\"color: #FFD700; font-weight: 500;\">'MOTHER'S DETAILS'.</span><br>" +
+                      "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you are going to put your mother's information as it is on National ID After click SAVE AND CONTINUE .</span>"
+            },
+            {
+                title: "NEXT OF KIN",
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you put the details of the person you trust as your next of kin, could be your brother or sister or your daughter or son, anyone you trust but must have a National ID.</span>"
+            }, 
+            {
+                title: "RECOMMENDER",
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you put information of the person who recommended you, his or her names on national ID, NIN no, every information. NOTE: IF YOU DON'T HAVE A RECOMMENDER, whatsapp me at +256762166117, I will recommend you.</span>"
+            },
+            {
+                title: "PAYMENT",
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you are going to go to make a payment over the bank or using your mobile money.</span>"
+            },
+            {
+                title: "REVIEW AND SUBMIT",
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you can review your details before submitting them, after confirming everything is right, then you submit.</span>"
+            },
+            {
+                title: "SCHEDULE AN APPOINTMENT",
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here, after everything is done, payment, details, you come back to the browser and type passports.go.ug, then click on schedule appointment, they will ask you to put some information eg your surname, date of birth and your passport ID eg W003543275, then submit, after some time you will receive a message on your phone telling you when to go for passport processing.</span>"
+            },
+            {
+                title: "CHECK APPLICATION STATUS",
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you check if your passport is ready to pick. Go to any browser and type passports.go.ug, click check status, put your surname, date of birth and passport number eg W003543275, if it's ready, you will find ready, if not yet, you will find pending.</span>"
+            },
+            {
+                title: "CORRECTION",
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you will get a message on your phone saying your passport is ready, go to the place of collection you registered eg central office Kampala Kyambogo, for your passport, time and date.</span><br>" +
+                      "• <span style=\"color: #1e40af; font-weight: 500;\">FOR MORE VIDEO EXPLANATION, WATCH THE VIDEO ABOVE, FOR SUPPORT, whatsapp +256762166117.</span>"
+            }
+        ]
+    },
+    
+    {
+        id: "driving-permit",
+        title: "New Driving Permit Application (UDLS / SafeDEAL)",
+        category: "Transport & Travel",
+        agency: "Uganda Driver Licensing System (UDLS) / Ministry of Works",
+        icon: "fa-id-card",
+        color: "bg-amber-50 text-amber-600 border-amber-200",
+        cost: "UGX 220,000 - 415,000 (Based on validity selected: 1, 3, or 5 Years)",
+        time: "30 Days (Mandatory learner window) + 1 Day (Express printing)",
+        location: "Kyambogo / Regional Offices (Gulu, Mbarara, Mbale, Jinja, Arua, Fort Portal)",
+        link: "https://udls.co.ug",
+        image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_driving_permit",
+        description: "How to transition from a medical check to a learner's permit, pass the IOV test, and obtain your full Ugandan driving license through authorized UDLS evaluation centers.",
+        documents: [
+            "National ID (NIN) or Valid Passport",
+            "Medical Examination Form UCDP1 (signed & stamped by doctor)",
+            "Proof of Enrollment from a licensed driving school",
+            "Valid 3-Month Learner Driving Permit",
+            "Certificate of Competence from IOV (stamped on permit)",
+            "URA Payment Receipt (PRN)"
+        ],
+        steps: [
+            {
+                title: "Undergo Eye Test & Medical",
+                desc: "Do this: Download Medical Form UCDP1 from the UDLS portal, then visit an authorized medical doctor or optometrist to complete your vision and physical fitness evaluation. Example: Go to an approved clinic, pass the eye chart test, and get the medical practitioner to sign and official-stamp your UCDP1 form (valid for up to 6 months)."
+            },
+            {
+                title: "Generate URA PRN & Get Learner's Permit",
+                desc: "After this, do this: Go to the URA portal (services.ura.go.ug), generate a Payment Registration Number (PRN) for a Learner Driving Permit (UGX 60,000 for Class B), pay via Mobile Money or bank, then visit UDLS for biometrics. Example: Log onto URA eServices, choose Ministry of Works - Learner Permit, pay via MTN/Airtel Mobile Money, then bring your stamped UCDP1 form and National ID to UDLS Kyambogo to capture your photo and fingerprints for your 3-month Learner's Permit."
+            },
+            {
+                title: "Train at Driving School & Book IOV Test",
+                desc: "After this, do this: Enroll in an accredited driving school to take practical driving and road sign lessons, then have the school book your official police test. Example: Attend 2 to 4 weeks of driving practice with an instructor. Because individual applicants cannot self-book the IOV test, your driving school will officially register and schedule you for testing."
+            },
+            {
+                title: "Pass Inspectorate of Vehicles (IOV) Test",
+                desc: "After this, do this: Generate a URA PRN for the Inspectorate of Vehicles (IOV) test fee (UGX 25,000), pay it, and sit for the practical and road safety driving test with Uganda Police officers. Example: Go to the IOV testing yard with your instructor and Learner's Permit. Once you successfully execute the parking and road maneuvers, the police officer will stamp your Learner's Permit with the Certificate of Competence (valid for 12 months)."
+            },
+            {
+                title: "Observe 30-Day Window & Pay Full Permit Fee",
+                desc: "After this, do this: Wait until at least 30 days have passed from the date your Learner's Permit was issued, then log onto the URA portal to generate a PRN for your full driving permit card based on desired validity and pay digitally. Example: Select Class B and 3-Year validity on the URA eServices platform, pay the UGX 230,000 PRN via Mobile Money, and save the receipt. (1 Year = UGX 135,000 | 3 Years = UGX 230,000 | 5 Years = UGX 330,000. Cash is not accepted at UDLS counters)."
+            },
+            {
+                title: "Visit Licensing Office for Biometrics & Collect Permit",
+                desc: "After this, do this: Take your original IOV-stamped Learner's Permit, National ID, and URA receipt to Kyambogo or a regional branch for final biometric verification and smart card issuance. Example: Submit your documents at the UDLS verification counter, do a fast fingerprint verification, and collect your printed plastic Smart Driving Card within 30 to 60 minutes on the same day."
+            }
+        ]
+    },
+    {
+        id: "ursb-business",
+        title: "Registering a Company Name with URSB",
+        category: "Business & Licensing",
+        agency: "Uganda Registration Services Bureau",
+        icon: "fa-briefcase",
+        color: "bg-purple-50 text-purple-600 border-purple-200",
+        cost: "UGX 24,000 (Reservation) + UGX 100,000 (Registration)",
+        time: "2 - 3 Working Days",
+        location: "URSB HQ, Kampala / OBR Portal",
+        link: "https://ursb.go.ug",
+        image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ursb",
+        description: "Official procedure for reserving a business name, incorporating a limited liability company, and acquiring incorporation certificates.",
+        documents: [
+            "Proposed Company Names (At least 3 options)",
+            "National IDs of all Directors and Shareholders",
+            "Physical Registered Office Address",
+            "Articles and Memorandum of Association"
+        ],
+        steps: [
+            {
+                title: "Create URSB OBR Account",
+                desc: "Do this: Visit the URSB portal (obr.ursb.go.ug) and register an individual or entity user account. Example: Open the portal on your computer, click 'Register Account', enter your email, phone number, and National ID details, and verify via SMS OTP."
+            },
+            {
+                title: "Name Reservation",
+                desc: "After this, do this: Submit up to three proposed company names in order of preference for an availability search and reservation. Example: Enter 'Apex Technologies Ltd' as Choice 1, 'Apex Tech Uganda Ltd' as Choice 2, and pay the UGX 24,000 reservation fee via URA PRN. Wait 24 hours for URSB registrar approval."
+            },
+            {
+                title: "Fill Incorporation Particulars",
+                desc: "After this, do this: Fill out the online incorporation forms on the OBR portal detailing directors, shareholders, share capital, and office location. Example: Enter director NIN numbers, assign 50% shares to Director A and 50% to Director B, specify your physical address in Kampala, and upload signed Memorandum & Articles of Association."
+            },
+            {
+                title: "Pay Fees via URA PRN",
+                desc: "After this, do this: Generate a Payment Registration Number (PRN) for company registration fees (approx. UGX 100,000 + stamp duty based on share capital) and pay via bank or mobile money. Example: Select payment on the portal, generate the URA PRN, and pay via MTN Mobile Money or any commercial bank."
+            },
+            {
+                title: "Download Certificate",
+                desc: "After this, do this: Wait for the URSB registrar to review your uploaded documentation and issue your digital Certificate of Incorporation. Example: Once your application status turns to 'Approved', log into your OBR dashboard and download your official PDF Certificate of Incorporation and registered company documents."
+            }
+        ]
+    },
+
+             
+         
+    
+    {
+        id: "bus-travel",
+        title: "Intercity Bus Booking & Travel Guide (Kampala - Upcountry)",
+        category: "Transport & Travel",
+        agency: "Private Coach Operators (YY, Link, Global, Gateway)",
+        icon: "fa-bus",
+        color: "bg-rose-50 text-rose-600 border-rose-200",
+        cost: "UGX 30,000 - 80,000 (Depending on Route)",
+        time: "Instant Booking",
+        location: "Namayiba, Usafi, or Kisenyi Bus Terminals",
+        link: "https://ugandabusschedules.com",
+        image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_bus_travel",
+        description: "Practical guide to booking safe upcountry bus travel from Kampala to Gulu, Mbarara, Fort Portal, Mbale, and Arua.",
+        documents: [
+            "Valid National ID or Phone for Mobile Ticket",
+            "Luggage tags for secure tracking"
+        ],
+        steps: [
+            {
+                title: "Choose Bus Operator & Terminal",
+                desc: "Identify the bus company servicing your destination (e.g., Link for Fort Portal, YY for Eastern routes)."
+            },
+            {
+                title: "Book Ticket in Advance",
+                desc: "Visit the terminal booking office or use mobile money USSD codes provided by the bus company to secure seats."
+            },
+            {
+                title: "Arrive Early for Boarding",
+                desc: "Report to the terminal at least 45 minutes before departure for luggage loading and seating."
+            },
+            {
+                title: "Secure Luggage Token",
+                desc: "Ensure all heavy baggage is tagged and you receive a corresponding luggage token before boarding."
+            }
+        ]
+    },
+    {
+        id: "land-title",
+        title: "Land Title Verification & Search at Ministry of Lands",
+        category: "Civic & Tax",
+        agency: "Ministry of Lands, Housing and Urban Development",
+        icon: "fa-landmark",
+        color: "bg-indigo-50 text-indigo-600 border-indigo-200",
+        cost: "UGX 10,000 per Search",
+        time: "1 Working Day",
+        location: "MLHUD Zonal Offices / National Lands Information Portal",
+        link: "https://mlhud.go.ug",
+        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_land_title",
+        description: "Protect yourself from land fraud by conducting an official land search and title verification before purchasing property.",
+        documents: [
+            "Block and Plot Number / Copy of Title",
+            "National ID of the Searcher",
+            "Mobile Money or Bank Payment Receipt"
+        ],
+        steps: [
+            {
+                title: "Access the National Lands Information System",
+                desc: "Log onto the MLHUD e-services portal or visit the ministry records office desk."
+            },
+            {
+                title: "Provide Plot Details",
+                desc: "Input accurate Block number, Plot number, and District where the land is situated."
+            },
+            {
+                title: "Pay Official Search Fee",
+                desc: "Generate payment reference and pay UGX 10,000 via mobile money or approved bank."
+            },
+            {
+                title: "Review Search Report",
+                desc: "Examine the official search printout confirming rightful ownership, encumbrances, and caveats."
+            }
+        ]
+    }
+];
