@@ -1,15 +1,23 @@
-// Step-by-step guides data referenced by script ID
 const getGuideSteps = (guide) => {
-    if (Array.isArray(guide?.steps) && guide.steps.length) return guide.steps;
+    if (!guide) return [];
 
-    if (Array.isArray(guide?.services)) {
-        return guide.services.flatMap((service) =>
-            (service.steps || []).map((step) => ({
-                ...step,
-                serviceName: service.serviceName || service.serviceId || "Service"
-            }))
-        );
-    }
+    const serviceSteps = Array.isArray(guide?.services)
+        ? guide.services.flatMap((service) =>
+              (Array.isArray(service?.steps) ? service.steps : []).map((step, index) => ({
+                  ...step,
+                  serviceName:
+                      step?.serviceName ||
+                      service?.serviceName ||
+                      service?.serviceId ||
+                      "Service",
+                  stepNumber: step?.stepNumber ?? index + 1
+              }))
+          )
+        : [];
+
+    if (serviceSteps.length) return serviceSteps;
+
+    if (Array.isArray(guide?.steps) && guide.steps.length) return guide.steps;
 
     return [];
 };
