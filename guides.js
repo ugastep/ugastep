@@ -271,8 +271,7 @@ const guidesData = [
                 desc: "WHERE TO GO: Mobile Money (*165#/*185#) or Bank -> Physical URA Vehicle Registry Center.\n\nWHAT TO DO: Pay the PRN fee via Mobile Money or Bank. Take physical vehicle inspection report, original logbook, sales agreement, and payment receipts to the nearest URA vehicle licensing office (e.g., Nakawa / regional branch) to collect your new digital logbook.\n\nWHAT'S NEXT: Ownership transfer is 100% complete!"
             }
         ]
-    }
-];
+    },
     {
         id: "express-passport",
         title: "How to Apply for Ordinary or Express Passport Step by Step in Uganda",
@@ -354,8 +353,7 @@ const guidesData = [
                 desc: "• <span style=\"color: #FFD700; font-weight: 500;\">'FATHER'S DETAILS'.</span><br>" +
                       "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you are going to put your father's surname eg SENYONJO and given name eg FRED and on status, click in the space bar and choose, if Alive, put alive, if deceased, put deceased, put his date of birth, country of birth eg uganda, place of birth eg luweero, put his National ID NO (NIN), country of residence, put uganda, put a district on his National ID, Plot number, put it if you know it if you don't know, leave it, Nationality, click in the space bar and choose UGANDAN, Father's tribe, click in the space bar and choose your father's tribe eg Basoga.</span><br>" +
                       "• <span style=\"color: #FFD700; font-weight: 500;\">'MOTHER'S DETAILS'.</span><br>" +
-                      "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you are going to put your mother's information as it is on National ID, like the way you did on father's details.</span><br>" +
-                      "• <span style=\"color: #1e40af; font-weight: 500;\">After, click Save and continue.</span>"
+                      "• <span style=\"color: #1e40af; font-weight: 500;\">HERE you are going to put your mother's information as it is on National ID After click SAVE AND CONTINUE .</span>"
             },
             {
                 title: "NEXT OF KIN",
