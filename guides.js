@@ -364,12 +364,12 @@ const guidesData = [
                 desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you put information of the person who recommended you, his or her names on national ID, NIN no, every information. NOTE: IF YOU DON'T HAVE A RECOMMENDER, whatsapp me at +256762166117, I will recommend you.</span>"
             },
             {
-                title: "PAYMENT",
-                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you are going to go to make a payment over the bank or using your mobile money.</span>"
+                title: "REVIEW AND SUBMIT",
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you can review your details before submitting them, after confirming everything is right, then you submit AFTER THE SYSTEM WILL GENERATE FOR YOU A PDF FOR YOUR INFORMATION then go to any printer and print that information NOTE IT SHOULD BE 6Pages .</span>"
             },
             {
-                title: "REVIEW AND SUBMIT",
-                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you can review your details before submitting them, after confirming everything is right, then you submit.</span>"
+                title: "PAYMENT",
+                desc: "• <span style=\"color: #1e40af; font-weight: 500;\">Here you are going to go to make a payment over the bank or using your mobile money AFTER Printing your information Look the second page which has payment AND TAKE THAT COPY TO BANK AND MAKE PAYMENT OR copy the PRN on it and make payment using MOBILE MONEY.</span>"
             },
             {
                 title: "SCHEDULE AN APPOINTMENT",
