@@ -1,49 +1,278 @@
-// Step-by-step guides data referenced by script ID
+// Comprehensive, production-ready URA portal guides dataset covering all primary taxpayer workflows
 const guidesData = [
     {
-        id: "ura-tin",
-        title: "How to Register for a URA Tax TIN",
+        id: "ura-tin-individual",
+        title: "How to Register for an Individual URA Tax TIN",
         category: "Civic & Tax",
         agency: "Uganda Revenue Authority (URA)",
         icon: "fa-file-invoice-dollar",
         color: "bg-emerald-50 text-emerald-600 border-emerald-200",
-        cost: "Free (Online)",
-        time: "1 - 2 Hours",
-        location: "URA Portal / Any URA Station",
+        cost: "100% Free (No government or agent fees)",
+        time: "10 - 20 Minutes (Online)",
+        location: "URA Portal (www.ura.go.ug) or any physical URA Station / TaxHub nationwide",
         link: "https://ura.go.ug",
         image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80",
         videoEmbed: "https://www.youtube.com/embed/placeholder_ura_tin",
-        description: "A Tax Identification Number (TIN) is mandatory for employment, opening bank accounts, property purchase, and business operations in Uganda.",
+        description: "A Tax Identification Number (TIN) is a unique 10-digit identity code issued free of charge by URA. You need it in Uganda to get formal employment, open a bank account, buy land/property worth over 50 Million UGX, register a company, or clear goods at customs.",
+        support: {
+            tollFree: "0800 117 000 / 0800 217 000",
+            email: "services@ura.go.ug",
+            whatsapp: "+256 772 140 000",
+            headquarters: "URA Tower, Plot 1-4, Nakawa Industrial Area, Kampala"
+        },
         documents: [
-            "National ID (NIN) or Alien Identification Card",
-            "Active Personal Phone Number",
-            "Active Personal Email Address",
-            "Physical Residential Address Details"
+            "Ugandan Citizens: Valid National ID (NIN number)",
+            "Foreign Residents: Valid Passport + Work Permit / Alien ID",
+            "Refugees: UNHCR Refugee Card or OPM Attestation Letter",
+            "Active personal email address (must be able to access inbox immediately)",
+            "Active phone number (registered in taxpayer name for SMS OTPs)",
+            "Physical Address details (District, County, Sub-county, Parish, Village)"
         ],
         steps: [
             {
-                title: "Visit the Official URA Web Portal",
-                desc: "Go to the official URA e-services portal and click on 'Register for TIN'.",
+                title: "Step 1: Go to the Official URA Website",
+                desc: "WHERE TO GO: Open your web browser on a phone or computer and type 'www.ura.go.ug'.\n\nWHAT TO DO: Look at the top menu bar, click on 'e-Services', and then click on 'TIN Registration' (or click the main button that says 'Instant TIN').\n\nWHAT'S NEXT: The website will open a clean online registration form. Move to Step 2 to choose your tax category.",
                 image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80"
             },
             {
-                title: "Select Taxpayer Type",
-                desc: "Choose 'Individual' for personal TIN registration or 'Non-Individual' for corporate/company registration."
+                title: "Step 2: Choose 'Individual' & Verify Your Email Address",
+                desc: "WHERE TO GO: The taxpayer category section at the top of the form.\n\nWHAT TO DO: Click on 'Individual'. Type your active email address (Example: john.kato@gmail.com) and click 'Send Code'. Open your email inbox in a new browser tab, copy the 6-digit security code sent by URA (Example: 849201), switch back to the URA page, type the code into the box, and click 'Verify'.\n\nWHAT'S NEXT: Once your email is verified, the portal unlocks the identity verification section. Move to Step 3.",
+                image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80"
             },
             {
-                title: "Enter NIN & Personal Details",
-                desc: "Input your National Identification Number (NIN). The system will auto-populate verified NIRA data."
+                title: "Step 3: Enter Your National ID (NIN) to Auto-Load Your Details",
+                desc: "WHERE TO GO: The identity details section on the portal.\n\nWHAT TO DO: Select 'Ugandan Citizen'. Look at your National ID card and type your 14-character NIN (Example: CM90012345678A) and your exact Date of Birth. Click 'Validate'. The portal will talk directly to NIRA to automatically bring up your official legal names, date of birth, and gender.\n\nWHAT'S NEXT: Your personal details are now locked and verified against official government records. Move to Step 4 to fill in your contact and location details."
             },
             {
-                title: "Complete Contact Information",
-                desc: "Provide your working mobile number and email address where verification OTPs will be sent."
+                title: "Step 4: Fill in Your Phone Number, Address & Income Source",
+                desc: "WHERE TO GO: The contact, location, and employment fields.\n\nWHAT TO DO: Enter your active phone number (Example: 0772000000). Select your primary source of income from the dropdown list (Example: Select 'Employment' if employed, or 'Business' if self-employed). Select your residence details from the drop-down menus: District (e.g., Kampala), County (e.g., Kyadondo), Sub-County (e.g., Nakawa), Parish, and Village. If employed, enter your employer's TIN to link PAYE taxes.\n\nWHAT'S NEXT: Now that all required fields are complete, move to Step 5 to double-check and submit."
             },
             {
-                title: "Submit & Print TIN Certificate",
-                desc: "Verify all entries and submit. Download and print your generated Tax Identification Number (TIN) certificate PDF."
+                title: "Step 5: Review Your Details and Click 'Submit' (UGX 0 Cost)",
+                desc: "WHERE TO GO: Bottom of the registration page.\n\nWHAT TO DO: Scroll back up to review all inputs for accuracy. Tick the declaration box stating 'I declare that the information provided is true'. Solve the security captcha challenge (tick 'I am not a robot') and click the green 'Submit' button. Cost: UGX 0. No payment or processing fees are required.\n\nWHAT'S NEXT: The system will generate your TIN instantly or within 24 hours. Move to Step 6 to get your TIN certificate."
+            },
+            {
+                title: "Step 6: Receive Your 10-Digit TIN & Download Your Certificate",
+                desc: "WHERE TO GO: Your phone SMS, email inbox, and www.ura.go.ug login page.\n\nWHAT TO DO: Check your phone and email. URA will send your new 10-digit TIN (Example: 1012345678) and temporary password. Re-open www.ura.go.ug, click 'Login' at the top right, enter your TIN and password, go to 'My Certificates', and click 'Download TIN Certificate' to print your PDF.\n\nWHAT'S NEXT: You now have an active TIN! Keep your credentials safe for bank, employer, or business needs."
+            }
+        ],
+        troubleshooting: [
+            {
+                issue: "NIRA System Timeout Error",
+                solution: "WHAT TO DO NEXT: If the site says NIRA is unavailable, servers are busy. Retry early in the morning (before 8 AM) or late evening, or visit a physical URA branch for manual assistance."
+            },
+            {
+                issue: "Email Already Registered Error",
+                solution: "WHAT TO DO NEXT: Each email can only link to one TIN. Type a different email address or use account recovery if you registered previously."
             }
         ]
     },
+    {
+        id: "ura-tin-corporate",
+        title: "How to Register for a Non-Individual (Company/Business) URA Tax TIN",
+        category: "Civic & Tax",
+        agency: "Uganda Revenue Authority (URA)",
+        icon: "fa-building",
+        color: "bg-blue-50 text-blue-600 border-blue-200",
+        cost: "100% Free (Online via URSB Integration)",
+        time: "1 - 2 Working Days",
+        location: "URA Web Portal (www.ura.go.ug) / URSB Online Services System",
+        link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_corporate_tin",
+        description: "A mandatory corporate Tax Identification Number for registered Limited Liability Companies, Partnerships, NGOs, Cooperatives, and Trusts operating in Uganda.",
+        support: {
+            tollFree: "0800 117 000 / 0800 217 000",
+            email: "services@ura.go.ug",
+            whatsapp: "+256 772 140 000",
+            headquarters: "URA Tower, Plot 1-4, Nakawa Industrial Area, Kampala"
+        },
+        documents: [
+            "Valid URSB Certificate of Incorporation or Registration",
+            "Memorandum & Articles of Association (MEMARTS) or Partnership Deed",
+            "Valid Individual TINs and National IDs for at least two Company Directors",
+            "Official company email address and active corporate phone number",
+            "Physical business address details (Plot Number, Building Name, Street, District)"
+        ],
+        steps: [
+            {
+                title: "Step 1: Access URA Non-Individual TIN Workspace",
+                desc: "WHERE TO GO: Go to www.ura.go.ug -> Click 'e-Services' -> Select 'Non-Individual TIN Registration'.\n\nWHAT TO DO: Click 'Start New Registration' to begin the corporate tax portal application.\n\nWHAT'S NEXT: Move to Step 2 to enter your business incorporation details."
+            },
+            {
+                title: "Step 2: Enter URSB Registration Number & Validate Business",
+                desc: "WHERE TO GO: Business Registration Details section on the portal.\n\nWHAT TO DO: Select your entity type (e.g., Limited Liability Company). Type your exact URSB Registration Number (Example: 80020000123456) and Incorporation Date. Click 'Validate'. The portal pulls verified company names and share structure from URSB databases.\n\nWHAT'S NEXT: Move to Step 3 to add directors and your designated tax representative."
+            },
+            {
+                title: "Step 3: Enter Directors' TINs & Designate Tax Representative",
+                desc: "WHERE TO GO: Directors and Officers section.\n\nWHAT TO DO: Input the active individual TINs and NINs of at least two company directors. Assign one director or qualified accountant as the official Tax Representative responsible for submitting monthly/annual tax filings.\n\nWHAT'S NEXT: Move to Step 4 to specify physical company premises and financial dates."
+            },
+            {
+                title: "Step 4: Provide Business Address & Financial Year Period",
+                desc: "WHERE TO GO: Address and Accounting details section.\n\nWHAT TO DO: Enter physical office location details (Example: Plot 12, Kampala Road, Kingdom Kampala Building, Nakawa Division). Select your financial accounting cycle (e.g., July 1st to June 30th).\n\nWHAT'S NEXT: Move to Step 5 to review corporate entries and submit."
+            },
+            {
+                title: "Step 5: Review & Submit Corporate Application (UGX 0 Cost)",
+                desc: "WHERE TO GO: Application summary and declaration footer.\n\nWHAT TO DO: Double-check that all director TINs and URSB data match your official company documents. Tick the legal declaration box, complete the captcha challenge, and click 'Submit'. Processing cost is free (UGX 0).\n\nWHAT'S NEXT: Move to Step 6 to receive and print your Corporate TIN Certificate."
+            },
+            {
+                title: "Step 6: Receive Corporate Credentials & Download Certificate",
+                desc: "WHERE TO GO: Official company email inbox and www.ura.go.ug login dashboard.\n\nWHAT TO DO: Once approved by URA (within 24 hours), check company email for your 10-digit Corporate TIN (Example: 5001234567) and portal password. Log in at www.ura.go.ug, go to 'My Certificates', and download the PDF for commercial bank account opening."
+            }
+        ]
+    },
+    {
+        id: "ura-prn-payment",
+        title: "How to Generate a PRN & Pay Taxes on the URA Portal",
+        category: "Payments & PRN",
+        agency: "Uganda Revenue Authority (URA)",
+        icon: "fa-credit-card",
+        color: "bg-purple-50 text-purple-600 border-purple-200",
+        cost: "PRN Generation is Free (You pay only the tax liability or statutory fee)",
+        time: "5 Minutes",
+        location: "URA Portal / Mobile Money (*165# or *185#) / Commercial Banks nationwide",
+        link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_prn",
+        description: "A Payment Registration Number (PRN) is a mandatory 13-digit code generated on the URA website whenever you pay tax, stamp duty, motor vehicle fees, court fees, or penalties in Uganda.",
+        documents: [
+            "Your 10-digit URA TIN",
+            "Exact payment amount in Ugandan Shillings (UGX)",
+            "Mobile Money account (MTN/Airtel) or Bank account details"
+        ],
+        steps: [
+            {
+                title: "Step 1: Open the URA Payment Registration Page",
+                desc: "WHERE TO GO: Go to www.ura.go.ug.\n\nWHAT TO DO: Click 'e-Services' on the top navigation bar, then click 'Payment Registration' (Generate PRN).\n\nWHAT'S NEXT: The e-Payment portal will open. Move to Step 2 to identify yourself and choose the tax head."
+            },
+            {
+                title: "Step 2: Enter Your TIN & Select Tax Head",
+                desc: "WHERE TO GO: Taxpayer and Payment Type section.\n\nWHAT TO DO: Type your 10-digit TIN (Example: 1012345678). Your name will display automatically. Click on the 'Tax Head' dropdown menu and select the payment reason (Example: Select 'Income Tax', 'Stamp Duty', 'Motor Vehicle Registration', or 'Local Service Tax').\n\nWHAT'S NEXT: Move to Step 3 to specify the exact amount of money to pay."
+            },
+            {
+                title: "Step 3: Enter Payment Amount & Select Mode of Payment",
+                desc: "WHERE TO GO: Payment Details section.\n\nWHAT TO DO: Type the exact amount in Shillings into the 'Amount' box (Example: 100000 for UGX 100,000). Under 'Payment Mode', select how you plan to complete payment: choose 'Mobile Money' or 'Bank Teller'.\n\nWHAT'S NEXT: Move to Step 4 to generate your official 13-digit payment code."
+            },
+            {
+                title: "Step 4: Click 'Submit' & Save Your 13-Digit PRN",
+                desc: "WHERE TO GO: Screen output popup after clicking submit.\n\nWHAT TO DO: Click the green 'Submit' button. The portal displays a payment slip containing a 13-digit reference code called a PRN (Example: 2240001234567). Write down this 13-digit number or take a screenshot.\n\nWHAT'S NEXT: Move to Step 5 to execute the payment using your phone or bank."
+            },
+            {
+                title: "Step 5: Execute Payment via Mobile Money or Bank Branch",
+                desc: "WHERE TO GO: Mobile phone USSD or any commercial bank teller desk.\n\nWHAT TO DO (Mobile Money):\n• MTN: Dial *165# -> Select 'Pay Taxes / URA' -> Enter 13-digit PRN -> Confirm taxpayer name -> Enter PIN.\n• Airtel: Dial *185# -> Select 'Pay Taxes / URA' -> Enter 13-digit PRN -> Confirm details -> Enter PIN.\nWHAT TO DO (Bank): Walk into any commercial bank counter, present your 13-digit PRN, and hand over cash.\n\nWHAT'S NEXT: Move to Step 6 to verify that URA received your money."
+            },
+            {
+                title: "Step 6: Receive Confirmation SMS & Check Tax Ledger",
+                desc: "WHERE TO GO: Your phone SMS and www.ura.go.ug login dashboard.\n\nWHAT TO DO: Within 2 minutes, you will receive payment confirmation via SMS. Log into your URA account, go to 'My Tax Ledger', and verify that the payment status displays 'PAID'. Keep the SMS receipt for your records."
+            }
+        ]
+    },
+    {
+        id: "ura-nil-returns",
+        title: "How to File a URA Nil Return (Avoid Penalties)",
+        category: "Tax Compliance",
+        agency: "Uganda Revenue Authority (URA)",
+        icon: "fa-file-signature",
+        color: "bg-amber-50 text-amber-600 border-amber-200",
+        cost: "100% Free",
+        time: "5 Minutes",
+        location: "URA Web Portal (www.ura.go.ug)",
+        link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_nil_returns",
+        description: "If you have an active URA TIN but earned zero income or did not run business operations during a tax year/month, you MUST legally file a 'Nil Return' on the URA portal before the deadline (June 30th for annual income tax) to avoid automatic late-filing fines of UGX 200,000+ per return.",
+        documents: [
+            "Active 10-digit URA TIN",
+            "URA Web Portal Password"
+        ],
+        steps: [
+            {
+                title: "Step 1: Log into the URA Portal Workspace",
+                desc: "WHERE TO GO: Open www.ura.go.ug and click the red 'Login' button at the top right.\n\nWHAT TO DO: Enter your 10-digit TIN (Example: 1012345678) and password, solve the math captcha (e.g., 5 + 3 = 8), and click 'Login'.\n\nWHAT'S NEXT: Your e-Tax dashboard will open. Move to Step 2 to access returns."
+            },
+            {
+                title: "Step 2: Navigate to Returns -> File Nil Return",
+                desc: "WHERE TO GO: Main portal navigation bar inside your dashboard.\n\nWHAT TO DO: Click on 'Returns' on the top menu, then select 'File Nil Return' from the dropdown list.\n\nWHAT'S NEXT: Move to Step 3 to select the tax type and period."
+            },
+            {
+                title: "Step 3: Select Tax Obligation & Return Period",
+                desc: "WHERE TO GO: Nil Return input fields.\n\nWHAT TO DO: Under 'Tax Obligation', select 'Income Tax - Individual' (or 'VAT' if registered). Select the return period start and end date (e.g., From 01/07/2025 To 30/06/2026 for annual returns).\n\nWHAT'S NEXT: Move to Step 4 to submit your Nil return."
+            },
+            {
+                title: "Step 4: Submit Return & Download Acknowledgement Receipt",
+                desc: "WHERE TO GO: Submission prompt.\n\nWHAT TO DO: Click 'Submit'. The system will process your return and display an acknowledgement receipt confirming zero tax liability. Click 'Download Receipt' and save the PDF copy.\n\nWHAT'S NEXT: You are completely compliant! No fine will be charged to your TIN for that period."
+            }
+        ]
+    },
+    {
+        id: "ura-password-reset",
+        title: "How to Recover Lost TIN or Reset URA Password",
+        category: "Account Recovery",
+        agency: "Uganda Revenue Authority (URA)",
+        icon: "fa-key",
+        color: "bg-red-50 text-red-600 border-red-200",
+        cost: "100% Free",
+        time: "3 - 5 Minutes",
+        location: "URA Web Portal (www.ura.go.ug)",
+        link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_reset",
+        description: "Recover your forgotten 10-digit URA Tax Identification Number or reset your e-Tax portal account password instantly using your registered email address or National ID.",
+        documents: [
+            "National Identification Number (NIN)",
+            "Registered mobile phone number or email inbox"
+        ],
+        steps: [
+            {
+                title: "Step 1: Access URA Login / Recovery Page",
+                desc: "WHERE TO GO: Go to www.ura.go.ug -> Click 'Login' -> Click 'Forgot Password?' or 'Find My TIN'.\n\nWHAT TO DO: Choose whether you are recovering your TIN number or resetting your portal password.\n\nWHAT'S NEXT: Move to Step 2 to enter your registered details."
+            },
+            {
+                title: "Step 2: Enter National ID (NIN) & Request OTP",
+                desc: "WHERE TO GO: Identity recovery form.\n\nWHAT TO DO: Type your 14-character NIN (Example: CM90012345678A) and registered email or phone number. Click 'Send Reset Link / OTP'.\n\nWHAT'S NEXT: Move to Step 3 to verify identity and set a new password."
+            },
+            {
+                title: "Step 3: Enter OTP & Set New Password",
+                desc: "WHERE TO GO: Email inbox / SMS and portal reset screen.\n\nWHAT TO DO: Open the SMS/email sent by URA, copy the reset code, paste it into the portal prompt, and type a new secure password (must include letters, numbers, and a symbol like Ura#2026).\n\nWHAT'S NEXT: Click 'Save Password'. You can now log into your URA portal account immediately."
+            }
+        ]
+    },
+    {
+        id: "ura-motor-vehicle-transfer",
+        title: "How to Transfer Motor Vehicle / Motorcycle Ownership",
+        category: "Vehicles & Property",
+        agency: "Uganda Revenue Authority (URA)",
+        icon: "fa-car",
+        color: "bg-indigo-50 text-indigo-600 border-indigo-200",
+        cost: "Transfer Fees + Stamp Duty (1% of vehicle value, minimum UGX 30,000 PRN)",
+        time: "1 to 3 Working Days",
+        location: "URA Portal / Physical Vehicle Inspection Center",
+        link: "https://ura.go.ug",
+        image: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80",
+        videoEmbed: "https://www.youtube.com/embed/placeholder_ura_vehicle",
+        description: "Legal transfer of motor vehicle or motorcycle (boda-boda) registration logbook from a seller to a buyer in Uganda using URA e-Tax portal transfer PINs.",
+        documents: [
+            "Original Vehicle Logbook",
+            "Signed Transfer Form (Form 10) & Sales Agreement",
+            "Active URA TINs for both Seller and Buyer",
+            "Copies of National IDs for both parties"
+        ],
+        steps: [
+            {
+                title: "Step 1: Seller Initiates Transfer on URA Portal",
+                desc: "WHERE TO GO: Seller logs into www.ura.go.ug -> Click 'Motor Vehicle' -> Select 'Initiate Ownership Transfer'.\n\nWHAT TO DO: Seller enters vehicle registration number (e.g., UBG 123X) and buyer's 10-digit TIN. System generates a Seller Transfer PIN.\n\nWHAT'S NEXT: Move to Step 2 for buyer acceptance."
+            },
+            {
+                title: "Step 2: Buyer Accepts Transfer & Generates PRN",
+                desc: "WHERE TO GO: Buyer logs into www.ura.go.ug -> Click 'Motor Vehicle' -> Select 'Accept Ownership Transfer'.\n\nWHAT TO DO: Buyer enters vehicle number and Seller Transfer PIN. Portal calculates statutory stamp duty (1%) and transfer fees, then generates a payment PRN.\n\nWHAT'S NEXT: Move to Step 3 to pay the PRN fees."
+            },
+            {
+                title: "Step 3: Pay Transfer Fees & Submit Logbook for Printing",
+                desc: "WHERE TO GO: Mobile Money (*165#/*185#) or Bank -> Physical URA Vehicle Registry Center.\n\nWHAT TO DO: Pay the PRN fee via Mobile Money or Bank. Take physical vehicle inspection report, original logbook, sales agreement, and payment receipts to the nearest URA vehicle licensing office (e.g., Nakawa / regional branch) to collect your new digital logbook.\n\nWHAT'S NEXT: Ownership transfer is 100% complete!"
+            }
+        ]
+    }
+];
     {
         id: "express-passport",
         title: "How to Apply for Ordinary or Express Passport Step by Step in Uganda",
