@@ -559,8 +559,8 @@ const guidesData = [
                     desc: "Do this: Bring expired card, medical form, ID, and receipt to UDLS. After this: Verify biometrics and collect your renewed permit card."
                 }
             ]
-        }, 
-                 
+         
+     },            
     {
         id: "ursb-business",
         title: "Registering a Company Name with URSB",
