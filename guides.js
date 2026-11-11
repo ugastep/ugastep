@@ -1,4 +1,4 @@
-// Comprehensive, production-ready URA portal guides dataset covering all primary taxpayer workflows
+// Step-by-step guides data referenced by script ID
 const guidesData = [
     {
         id: "ura-tin-individual",
