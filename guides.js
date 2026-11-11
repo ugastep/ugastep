@@ -386,46 +386,53 @@ const guidesData = [
             }
         ]
     },
+    
     {
         id: "driving-permit",
-        title: "New Driving Permit Application (UDPS / SafeDEAL)",
+        title: "New Driving Permit Application (UDLS / SafeDEAL)",
         category: "Transport & Travel",
-        agency: "Uganda Driving Permit System (Face Technologies)",
+        agency: "Uganda Driver Licensing System (UDLS) / Ministry of Works",
         icon: "fa-id-card",
         color: "bg-amber-50 text-amber-600 border-amber-200",
-        cost: "UGX 130,000 - 250,000 (Based on Class)",
-        time: "1 Working Day (Express)",
-        location: "Kyambogo / Regional Offices",
-        link: "https://www.udps.go.ug",
+        cost: "UGX 220,000 - 415,000 (Based on validity selected: 1, 3, or 5 Years)",
+        time: "30 Days (Mandatory learner window) + 1 Day (Express printing)",
+        location: "Kyambogo / Regional Offices (Gulu, Mbarara, Mbale, Jinja, Arua, Fort Portal)",
+        link: "https://udls.co.ug",
         image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80",
         videoEmbed: "https://www.youtube.com/embed/placeholder_driving_permit",
-        description: "How to transition from a learner's permit or renew your full Ugandan driving license through authorized evaluation centers.",
+        description: "How to transition from a medical check to a learner's permit, pass the IOV test, and obtain your full Ugandan driving license through authorized UDLS evaluation centers.",
         documents: [
-            "Valid Learner Driving Permit",
-            "Certificate of Competence from IOV",
-            "National ID (NIN)",
+            "National ID (NIN) or Valid Passport",
+            "Medical Examination Form UCDP1 (signed & stamped by doctor)",
+            "Proof of Enrollment from a licensed driving school",
+            "Valid 3-Month Learner Driving Permit",
+            "Certificate of Competence from IOV (stamped on permit)",
             "URA Payment Receipt (PRN)"
         ],
         steps: [
             {
                 title: "Undergo Eye Test & Medical",
-                desc: "Visit an authorized medical optometrist and doctor to clear your fitness for driving."
+                desc: "Do this: Download Medical Form UCDP1 from the UDLS portal, then visit an authorized medical doctor or optometrist to complete your vision and physical fitness evaluation. Example: Go to an approved clinic, pass the eye chart test, and get the medical practitioner to sign and official-stamp your UCDP1 form (valid for up to 6 months)."
+            },
+            {
+                title: "Generate URA PRN & Get Learner's Permit",
+                desc: "After this, do this: Go to the URA portal (services.ura.go.ug), generate a Payment Registration Number (PRN) for a Learner Driving Permit (UGX 60,000 for Class B), pay via Mobile Money or bank, then visit UDLS for biometrics. Example: Log onto URA eServices, choose Ministry of Works - Learner Permit, pay via MTN/Airtel Mobile Money, then bring your stamped UCDP1 form and National ID to UDLS Kyambogo to capture your photo and fingerprints for your 3-month Learner's Permit."
+            },
+            {
+                title: "Train at Driving School & Book IOV Test",
+                desc: "After this, do this: Enroll in an accredited driving school to take practical driving and road sign lessons, then have the school book your official police test. Example: Attend 2 to 4 weeks of driving practice with an instructor. Because individual applicants cannot self-book the IOV test, your driving school will officially register and schedule you for testing."
             },
             {
                 title: "Pass Inspectorate of Vehicles (IOV) Test",
-                desc: "Book and pass the practical driving test conducted by the Uganda Police IOV."
+                desc: "After this, do this: Generate a URA PRN for the Inspectorate of Vehicles (IOV) test fee (UGX 25,000), pay it, and sit for the practical and road safety driving test with Uganda Police officers. Example: Go to the IOV testing yard with your instructor and Learner's Permit. Once you successfully execute the parking and road maneuvers, the police officer will stamp your Learner's Permit with the Certificate of Competence (valid for 12 months)."
             },
             {
-                title: "Generate URA PRN Payment",
-                desc: "Log onto URA portal, generate payment registration for driving permit fees according to your vehicle classes."
+                title: "Observe 30-Day Window & Pay Full Permit Fee",
+                desc: "After this, do this: Wait until at least 30 days have passed from the date your Learner's Permit was issued, then log onto the URA portal to generate a PRN for your full driving permit card based on desired validity and pay digitally. Example: Select Class B and 3-Year validity on the URA eServices platform, pay the UGX 230,000 PRN via Mobile Money, and save the receipt. (1 Year = UGX 135,000 | 3 Years = UGX 230,000 | 5 Years = UGX 330,000. Cash is not accepted at UDLS counters)."
             },
             {
-                title: "Visit Licensing Office for Biometrics",
-                desc: "Take your paperwork and payment slips to Kyambogo or regional issuance centers for photo & fingerprint capture."
-            },
-            {
-                title: "Print & Collect Permit",
-                desc: "Wait for processing and receive your smart driving card on the same day."
+                title: "Visit Licensing Office for Biometrics & Collect Permit",
+                desc: "After this, do this: Take your original IOV-stamped Learner's Permit, National ID, and URA receipt to Kyambogo or a regional branch for final biometric verification and smart card issuance. Example: Submit your documents at the UDLS verification counter, do a fast fingerprint verification, and collect your printed plastic Smart Driving Card within 30 to 60 minutes on the same day."
             }
         ]
     },
@@ -452,26 +459,30 @@ const guidesData = [
         steps: [
             {
                 title: "Create URSB OBR Account",
-                desc: "Sign up on the Online Business Registration (OBR) portal using your email and phone number."
+                desc: "Do this: Visit the URSB portal (obr.ursb.go.ug) and register an individual or entity user account. Example: Open the portal on your computer, click 'Register Account', enter your email, phone number, and National ID details, and verify via SMS OTP."
             },
             {
                 title: "Name Reservation",
-                desc: "Submit up to three preferred company names for availability check and approval by URSB."
+                desc: "After this, do this: Submit up to three proposed company names in order of preference for an availability search and reservation. Example: Enter 'Apex Technologies Ltd' as Choice 1, 'Apex Tech Uganda Ltd' as Choice 2, and pay the UGX 24,000 reservation fee via URA PRN. Wait 24 hours for URSB registrar approval."
             },
             {
                 title: "Fill Incorporation Particulars",
-                desc: "Enter director details, share capital distribution, and beneficial ownership information."
+                desc: "After this, do this: Fill out the online incorporation forms on the OBR portal detailing directors, shareholders, share capital, and office location. Example: Enter director NIN numbers, assign 50% shares to Director A and 50% to Director B, specify your physical address in Kampala, and upload signed Memorandum & Articles of Association."
             },
             {
                 title: "Pay Fees via URA PRN",
-                desc: "Pay name reservation and registration fees through bank or mobile money using the generated PRN."
+                desc: "After this, do this: Generate a Payment Registration Number (PRN) for company registration fees (approx. UGX 100,000 + stamp duty based on share capital) and pay via bank or mobile money. Example: Select payment on the portal, generate the URA PRN, and pay via MTN Mobile Money or any commercial bank."
             },
             {
                 title: "Download Certificate",
-                desc: "Once reviewed and approved by registrars, download your official Certificate of Incorporation."
+                desc: "After this, do this: Wait for the URSB registrar to review your uploaded documentation and issue your digital Certificate of Incorporation. Example: Once your application status turns to 'Approved', log into your OBR dashboard and download your official PDF Certificate of Incorporation and registered company documents."
             }
         ]
     },
+
+             
+         
+    
     {
         id: "bus-travel",
         title: "Intercity Bus Booking & Travel Guide (Kampala - Upcountry)",
