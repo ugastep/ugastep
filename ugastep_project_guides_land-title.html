@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Title Verification &amp; Search at Ministry of Lands | UgaStep</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        uganda: {
+                            black: '#121212',
+                            yellow: '#FCD116',
+                            red: '#D90429'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .ug-stripe {
+            height: 5px;
+            background: linear-gradient(90deg, #121212 0%, #121212 33.3%, #FCD116 33.3%, #FCD116 66.6%, #D90429 66.6%, #D90429 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col">
+    <div class="ug-stripe w-full sticky top-0 z-50"></div>
+
+    <!-- Header -->
+    <header class="bg-slate-900/95 backdrop-blur border-b border-slate-800 sticky top-1 z-40">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2.5 text-white hover:opacity-90">
+                <span class="font-display font-extrabold text-xl tracking-tight">Uga<span class="text-uganda-red">Step</span></span>
+                <span class="text-xs text-slate-400 hidden sm:inline">| Uganda's Guide, Step by Step</span>
+            </a>
+            <div class="flex items-center gap-3">
+                <button onclick="window.print()" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 border border-slate-700">
+                    <i class="fa-solid fa-print mr-1"></i> Print Guide
+                </button>
+                <a href="../index.html" class="px-3.5 py-1.5 rounded-xl bg-white text-slate-900 hover:bg-slate-100 text-xs font-bold">
+                    <i class="fa-solid fa-arrow-left mr-1"></i> All Guides
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Guide Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 flex-grow w-full">
+        <!-- Breadcrumb -->
+        <nav class="text-xs text-slate-400 mb-6 flex items-center gap-2">
+            <a href="../index.html" class="hover:text-white">Home</a>
+            <span>/</span>
+            <span class="text-slate-300">Civic &amp; Tax</span>
+        </nav>
+
+        <!-- Hero Banner -->
+        <div class="rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl mb-8">
+            <div class="relative h-52 sm:h-64">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Land Title Verification &amp; Search at Ministry of Lands" class="w-full h-full object-cover opacity-70">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+                <div class="absolute bottom-5 left-6 right-6">
+                    <div class="flex flex-wrap items-center gap-2 mb-2">
+                        <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-uganda-yellow text-slate-950">Civic &amp; Tax</span>
+                        <span class="text-xs font-medium text-slate-200 bg-slate-950/80 px-2.5 py-1 rounded-lg border border-slate-700">Ministry of Lands, Housing and Urban Development</span>
+                    </div>
+                    <h1 class="font-display font-extrabold text-2xl sm:text-4xl text-white leading-tight">Land Title Verification &amp; Search at Ministry of Lands</h1>
+                </div>
+            </div>
+
+            <!-- Key Facts Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6 bg-slate-900 border-t border-slate-800 text-xs">
+                <div>
+                    <span class="text-slate-500 uppercase tracking-wider text-[10px] font-semibold block mb-1">Estimated Cost</span>
+                    <span class="font-bold text-white text-sm">UGX 10,000 per Search</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 uppercase tracking-wider text-[10px] font-semibold block mb-1">Processing Time</span>
+                    <span class="font-bold text-white text-sm">1 Working Day</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 uppercase tracking-wider text-[10px] font-semibold block mb-1">Where to Apply</span>
+                    <span class="font-bold text-white text-sm">MLHUD Zonal Offices / National Lands Information Portal</span>
+                </div>
+                <div>
+                    <span class="text-slate-500 uppercase tracking-wider text-[10px] font-semibold block mb-1">Official Portal</span>
+                    <a href="https://mlhud.go.ug" target="_blank" rel="noopener noreferrer" class="font-bold text-uganda-yellow hover:underline text-sm inline-flex items-center gap-1.5">
+                        Open Official Portal <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <section class="mb-8">
+            <h2 class="font-display font-bold text-lg text-white uppercase tracking-wider mb-3">Overview</h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed bg-slate-900/60 p-5 rounded-2xl border border-slate-800/80">Protect yourself from land fraud by conducting an official land search and title verification before purchasing property.</p>
+        </section>
+
+        <!-- Required Documents -->
+        <section class="mb-10">
+            <h2 class="font-display font-bold text-lg text-white uppercase tracking-wider mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-folder-open text-amber-400"></i> Required Prerequisites & Documents
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="flex items-start gap-2.5 p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 text-sm"><i class="fa-solid fa-file-circle-check text-emerald-400 mt-1 shrink-0"></i><span>Block and Plot Number / Copy of Title</span></div>
+<div class="flex items-start gap-2.5 p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 text-sm"><i class="fa-solid fa-file-circle-check text-emerald-400 mt-1 shrink-0"></i><span>National ID of the Searcher</span></div>
+<div class="flex items-start gap-2.5 p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 text-sm"><i class="fa-solid fa-file-circle-check text-emerald-400 mt-1 shrink-0"></i><span>Mobile Money or Bank Payment Receipt</span></div>
+            </div>
+        </section>
+
+        <!-- Step-by-Step Instructions -->
+        <section>
+            <div class="flex items-center justify-between mb-5">
+                <h2 class="font-display font-bold text-lg text-white uppercase tracking-wider flex items-center gap-2">
+                    <i class="fa-solid fa-list-check text-uganda-red"></i> Step-by-Step Instructions
+                </h2>
+                <span id="standalone-progress" class="text-xs font-semibold text-slate-300 bg-slate-800 px-3 py-1 rounded-full">0/4 completed</span>
+            </div>
+            <div class="space-y-4">
+                
+        <div class="step-card p-5 sm:p-6 rounded-2xl bg-slate-900 border border-slate-800 transition-all" data-step-idx="0">
+            <div class="flex items-start gap-4">
+                <button onclick="toggleStandaloneStep('land-title', 0)" class="step-btn w-8 h-8 rounded-xl bg-slate-950 border border-slate-700 text-slate-400 hover:border-uganda-yellow hover:text-uganda-yellow flex items-center justify-center shrink-0 mt-0.5 font-bold text-sm transition-all">
+                    1
+                </button>
+                <div class="flex-1 min-w-0">
+                    <h3 class="step-title font-display font-bold text-lg text-white">Step 1: Access the National Lands Information System</h3>
+                    <div class="mt-3 text-sm text-slate-300 leading-relaxed space-y-2">
+                        <strong class="text-uganda-yellow font-semibold">WHAT TO DO:</strong> Log onto the MLHUD e-services portal or visit the Ministry Zonal Office (MZO) records desk covering the district where the land is located.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="step-card p-5 sm:p-6 rounded-2xl bg-slate-900 border border-slate-800 transition-all" data-step-idx="1">
+            <div class="flex items-start gap-4">
+                <button onclick="toggleStandaloneStep('land-title', 1)" class="step-btn w-8 h-8 rounded-xl bg-slate-950 border border-slate-700 text-slate-400 hover:border-uganda-yellow hover:text-uganda-yellow flex items-center justify-center shrink-0 mt-0.5 font-bold text-sm transition-all">
+                    2
+                </button>
+                <div class="flex-1 min-w-0">
+                    <h3 class="step-title font-display font-bold text-lg text-white">Step 2: Provide Plot &amp; Block Details</h3>
+                    <div class="mt-3 text-sm text-slate-300 leading-relaxed space-y-2">
+                        <strong class="text-uganda-yellow font-semibold">WHAT TO DO:</strong> Input the accurate County, Block number, Plot number, and District as printed on the copy of the Certificate of Title.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="step-card p-5 sm:p-6 rounded-2xl bg-slate-900 border border-slate-800 transition-all" data-step-idx="2">
+            <div class="flex items-start gap-4">
+                <button onclick="toggleStandaloneStep('land-title', 2)" class="step-btn w-8 h-8 rounded-xl bg-slate-950 border border-slate-700 text-slate-400 hover:border-uganda-yellow hover:text-uganda-yellow flex items-center justify-center shrink-0 mt-0.5 font-bold text-sm transition-all">
+                    3
+                </button>
+                <div class="flex-1 min-w-0">
+                    <h3 class="step-title font-display font-bold text-lg text-white">Step 3: Pay Official Search Fee (UGX 10,000)</h3>
+                    <div class="mt-3 text-sm text-slate-300 leading-relaxed space-y-2">
+                        <strong class="text-uganda-yellow font-semibold">WHAT TO DO:</strong> Generate a URA payment reference (PRN) and pay the statutory UGX 10,000 search fee via Mobile Money or approved commercial bank.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="step-card p-5 sm:p-6 rounded-2xl bg-slate-900 border border-slate-800 transition-all" data-step-idx="3">
+            <div class="flex items-start gap-4">
+                <button onclick="toggleStandaloneStep('land-title', 3)" class="step-btn w-8 h-8 rounded-xl bg-slate-950 border border-slate-700 text-slate-400 hover:border-uganda-yellow hover:text-uganda-yellow flex items-center justify-center shrink-0 mt-0.5 font-bold text-sm transition-all">
+                    4
+                </button>
+                <div class="flex-1 min-w-0">
+                    <h3 class="step-title font-display font-bold text-lg text-white">Step 4: Review Official Search Report</h3>
+                    <div class="mt-3 text-sm text-slate-300 leading-relaxed space-y-2">
+                        <strong class="text-uganda-yellow font-semibold">WHAT TO DO:</strong> Examine the signed official search statement confirming the registered proprietor, acreage, and whether there are any mortgages, caveats, or court encumbrances.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+            </div>
+        </section>
+
+        
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-8 mt-12 text-xs text-slate-400">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-2">
+            <p><strong>Disclaimer:</strong> UgaStep is an independent educational guide platform and is NOT an official Government of Uganda agency.</p>
+            <p class="text-slate-500">© 2026 UgaStep Platform. Uganda's Guide, Step by Step.</p>
+        </div>
+    </footer>
+
+    <script>
+        const GUIDE_ID = "land-title";
+        const TOTAL_STEPS = 4;
+
+        function syncProgressUI() {
+            const saved = JSON.parse(localStorage.getItem('ugastep_completed_steps') || '{}');
+            const doneList = saved[GUIDE_ID] || [];
+            document.getElementById('standalone-progress').textContent = `${doneList.length}/${TOTAL_STEPS} completed`;
+
+            document.querySelectorAll('.step-card').forEach(card => {
+                const idx = parseInt(card.dataset.stepIdx, 10);
+                const btn = card.querySelector('.step-btn');
+                const title = card.querySelector('.step-title');
+                if (doneList.includes(idx)) {
+                    card.classList.add('bg-emerald-950/20', 'border-emerald-800/50');
+                    card.classList.remove('bg-slate-900', 'border-slate-800');
+                    btn.className = 'step-btn w-8 h-8 rounded-xl bg-emerald-500 border border-emerald-400 text-slate-950 flex items-center justify-center shrink-0 mt-0.5 font-bold text-sm transition-all';
+                    btn.innerHTML = '<i class="fa-solid fa-check"></i>';
+                    title.classList.add('text-emerald-300', 'line-through', 'opacity-80');
+                    title.classList.remove('text-white');
+                } else {
+                    card.classList.remove('bg-emerald-950/20', 'border-emerald-800/50');
+                    card.classList.add('bg-slate-900', 'border-slate-800');
+                    btn.className = 'step-btn w-8 h-8 rounded-xl bg-slate-950 border border-slate-700 text-slate-400 hover:border-uganda-yellow hover:text-uganda-yellow flex items-center justify-center shrink-0 mt-0.5 font-bold text-sm transition-all';
+                    btn.textContent = idx + 1;
+                    title.classList.remove('text-emerald-300', 'line-through', 'opacity-80');
+                    title.classList.add('text-white');
+                }
+            });
+        }
+
+        function toggleStandaloneStep(guideId, stepIdx) {
+            const saved = JSON.parse(localStorage.getItem('ugastep_completed_steps') || '{}');
+            if (!saved[guideId]) saved[guideId] = [];
+            const pos = saved[guideId].indexOf(stepIdx);
+            if (pos === -1) saved[guideId].push(stepIdx);
+            else saved[guideId].splice(pos, 1);
+            localStorage.setItem('ugastep_completed_steps', JSON.stringify(saved));
+            syncProgressUI();
+        }
+
+        document.addEventListener('DOMContentLoaded', syncProgressUI);
+    </script>
+</body>
+</html>
