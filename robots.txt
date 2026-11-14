@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ugastep.github.io/sitemap.xml
